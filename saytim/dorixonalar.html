@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dorixonalar Ro'yxati</title>
+  <link rel="stylesheet" href="dorixonalar.css">
+  <h1>Toshkentdagi va Xorazmdagi  Dorixonalar</h1>
+    <style>
+      body { font-family: sans-serif; padding: 20px; background: #f9fbfd; color: #333; }
+      h1 { color: #1f4e79; }
+      button {
+        background: #1f90ff;
+        color: white;
+        border: none;
+        padding: 10px 18px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      button:hover { background: #177de5; }
+      ul { list-style: none; padding: 0; }
+      li {
+        margin: 10px 0;
+        padding: 10px;
+        background: white;
+        border-left: 5px solid #1f90ff;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      }
+      @media(max-width: 600px){
+        h1 { font-size: 20px; }
+        button { width: 100%; font-size: 15px; }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Eng yaqin dorixonani topish</h1>
+    <h1><button onclick="qidir()">🔍 Eng yaqin dorixonani izlash</button></h1>
+    <ul id="natija"></ul>
+  
+    <script>
+      const dorixonalar = [
+        { nomi: "OXY Med Dorixona", lat: 41.3244, lon: 69.2285, manzil: "Shayxontohur, Zarqaynar 7", vaqt: "24/7",  },
+        { nomi: "Fayz Med Dorixona", lat: 41.2913, lon: 69.3501, manzil: "Yashnobod, Aviasozlar-2", vaqt: "08:00–22:00",  },
+        { nomi: "Shifo Dorixona", lat: 41.5602, lon: 60.6315, manzil: "Urganch, Al-Xorazmiy 15", vaqt: "24/7",  },
+        { nomi: "ZAM-ZAM PHARM-TRADE", lat: 41.3340, lon: 69.3305, manzil: "Mirzo-Ulug‘bek, Buyuk Ipak Yo‘li", vaqt: "08:00–23:30", tel: "+998" },
+        { nomi: "PHARMA COSMOS", lat: 41.2898, lon: 69.1775, manzil: "Uchtepa, Qovunchi 52", vaqt: "08:00–22:00",  },
+        { nomi: "GO DORIXONA", lat: 41.3341, lon: 69.3284, manzil: "Mirzo-Ulug‘bek, Arslonobod", vaqt: "24/7",  },
+        { nomi: "Dorixona 2", lat: 41.3401, lon: 69.3091, manzil: "Yunusobod, Amir Temur 44", vaqt: "08:00–22:00",  },
+        { nomi: "VITAMIN+", lat: 41.3002, lon: 69.2219, manzil: "Chilonzor 3, 45-uy", vaqt: "24/7",  },
+        { nomi: "ROSINKA", lat: 41.2896, lon: 69.2598, manzil: "Mirobod, Mexrjon 45", vaqt: "24/7",  },
+        { nomi: "ECO MED", lat: 41.2955, lon: 69.2431, manzil: "Yakkasaroy, Sh. Rustaveli", vaqt: "24/7", }
+      ];
+  
+      function masofaKm(lat1, lon1, lat2, lon2) {
+        const R = 6371;
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLon = (lon2 - lon1) * Math.PI / 180;
+        const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLon/2)**2;
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        return +(R * c).toFixed(2);
+      }
+  
+      function qidir() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(pos => {
+            const lat = pos.coords.latitude;
+            const lon = pos.coords.longitude;
+            const yaqin = dorixonalar.map(d => {
+              const mas = masofaKm(lat, lon, d.lat, d.lon);
+              return { ...d, masofa: mas };
+            }).sort((a, b) => a.masofa - b.masofa).slice(0, 5);
+  
+            const natija = document.getElementById("natija");
+            natija.innerHTML = "";
+            yaqin.forEach(d => {
+              const li = document.createElement("li");
+              li.innerHTML = `<strong>${d.nomi}</strong> – ${d.masofa} km<br><small>${d.manzil}<br>${d.vaqt}, 📞 ${d.tel}</small>`;
+              natija.appendChild(li);
+            });
+          }, () => alert("Joylashuvga ruxsat berilmadi."));
+        } else {
+          alert("Brauzeringiz joylashuvni qo‘llab-quvvatlamaydi.");
+        }
+      }
+    </script>
+  </body>
+  </html>
+  
+  <input type="text" id="searchBox" placeholder="Dorixona nomini qidiring...">
+
+  <div id="pharmacyList">
+
+    <div class="pharmacy">
+      <h3>OXY Med Dorixona</h3>
+      <p>Manzil: Toshkent, Shayxontohur tumani, Zarqaynar ko‘chasi 7</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>Dori-Darmon Dorixona №4</h3>
+      <p>Manzil: Toshkent, Yunusobod tumani, Amir Temur ko‘chasi 98</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>Fayz Med Dorixona</h3>
+      <p>Manzil: Toshkent, Yashnobod tumani, Aviasozlar-2 dahasi, 41-uy</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>Shifo Nur Dorixona</h3>
+      <p>Manzil: Toshkent, Mirobod tumani, Nukus ko‘chasi 88</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>Salomatlik Dorixona</h3>
+      <p>Manzil: Toshkent, Chilonzor tumani, Chilonzor ko‘chasi 12</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>Med Service Dorixona</h3>
+      <p>Manzil: Toshkent, Uchtepa tumani, Taqachi ko‘chasi 38</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>Farm Invest Dorixona</h3>
+      <p>Manzil: Toshkent, Yashnobod tumani, Ismoilov ko‘chasi 22</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>Vitamin Plus Dorixona</h3>
+      <p>Manzil: Toshkent, Chilonzor 3-dahasi, 45-uy</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>Apteka 777</h3>
+      <p>Manzil: Toshkent, Mirobod tumani, Nukus ko‘chasi 88</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>Dorixona Oila Med</h3>
+      <p>Manzil: Toshkent, Yunusobod tumani, Bog‘ishamol ko‘chasi 21</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>MED HOUSE Dorixona</h3>
+      <p>Manzil: Toshkent, Olmazor tumani, G‘afur G‘ulom ko‘chasi 12</p>
+    </div>
+    
+
+    <div class="pharmacy">
+      <h3>Shifo Dorixona</h3>
+      <p>Manzil: Xorazm viloyati, Urganch shahri, Al-Xorazmiy ko‘chasi 15</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>Salomat Dorixona</h3>
+      <p>Manzil: Xorazm viloyati, Xiva shahri, Islom Xo‘ja ko‘chasi 10</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>Farm Med Dorixona</h3>
+      <p>Manzil: Xorazm viloyati, Urganch shahri, Mustaqillik ko‘chasi 25</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>Nur Med Dorixona</h3>
+      <p>Manzil: Xorazm viloyati, Bog‘ot tumani, Do‘stlik ko‘chasi 5</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>Oltin Med Dorixona</h3>
+      <p>Manzil: Xorazm viloyati, Gurlan tumani, Navro‘z ko‘chasi 8</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>Tabassum Dorixona</h3>
+      <p>Manzil: Xorazm viloyati, Urganch shahri, Al-Beruniy0
+      </div>
+        <div class="pharmacy">
+      <h3>Dorixona 1</h3>
+      <p>Manzil: Chilonzor ko‘chasi 12</p>
+    </div>
+    <div class="pharmacy">
+      <h3>Dorixona 2</h3>
+      <p>Manzil: Yunusobod, Amir Temur ko‘chasi 44</p>
+    </div>
+    <div class="pharmacy">
+      <h3>Dorixona 3</h3>
+      <p>Manzil: Sergeli 8-dahasi, 22-uy</p>
+    </div>
+    <div class="pharmacy">
+      <h3>OXY Med Dorixona</h3>
+      <p>Manzil: Shayxontohur, Zarqaynar ko‘chasi 7</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>DoriDarmon Dorixona</h3>
+      <p>Manzil: Yakkasaroy tumani, Shota Rustaveli ko‘chasi 20</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>VITAMIN+ Dorixona</h3>
+      <p>Manzil: Chilonzor 3-dahasi, 45-uy</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>Apteka 777</h3>
+      <p>Manzil: Mirobod tumani, Nukus ko‘chasi 88</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>Dorixona Oila Med</h3>
+      <p>Manzil: Yunusobod tumani, Bog‘ishamol ko‘chasi 21</p>
+    </div>
+    
+    <div class="pharmacy">
+      <h3>MED HOUSE Dorixona</h3>
+      <p>Manzil: Olmazor tumani, G‘afur G‘ulom ko‘chasi 12</p>
+    </div>
+    <div class="pharmacy">
+    <h3>"Toshkent Dorixona 1"</h3>
+    <p>Manzil: "Toshkent sh., Chilonzor 5-kvartal"</p>
+   <p>Telefon: "+998 71 123 45 67"</p> 
+    <p>Vaqt: "08:00 - 22:00"</p>
+  </div>
+    <div class="pharmacy">
+    <h3>"Toshkent Dorixona 2"</h3>
+    <p>Manzil: "Toshkent sh.,  Yunusobod 9-dahasi"</p>
+   <p>Telefon: "+998 71 765 43 21"</p> 
+    <p>Vaqt: "08:00 - 22:00"</p>
+  </div>
+    <div class="pharmacy">
+    <h3>Nomi: "Xorazm Dorixona 1"</h3>
+      <p>Manzil: "Urganch sh., Al-Xorazmiy ko'chasi",</p>
+        <p>Telefon: "+998 62 224 11 22",</p>
+        <p>Vaqt: "09:00 - 20:00"</p>
+      </div>
+        <div class="pharmacy">
+    <h3>Nomi: "Xorazm Dorixona 2"</h3>
+      <p>Manzil: "Xiva sh., Ichan qal'a yaqinida",</p>
+        <p>Telefon: "+998 62 234 56 78",</p>
+        <p>Vaqt: "08:00 - 23:00"</p>
+      </div>
+      <div class="pharmacy">
+      <h3>"APOTHECA" DORIXONASI FILIALI</h3>
+      <p>Manzil:Toshkent, Yakkasaroy tumani, Kichik Halqa Yo'li ko'chasi, 70A</p>
+      <p>Telefon:+998 (90) 049-30-03</p>
+      <p>Vaqt: "08:00 - 23:00"</p>
+    </div>
+      <div class="pharmacy">
+        <h3>"AMANA" DORIXONASI</h3>
+        <p>Manzil: 100123, Toshkent, Uchtepa tumani, Chilonzor-11 mavzesi, 18</p>
+        <p>Telefon: +998 (71) 271-64-36</p>
+        <p>Vaqt: 08.00 - 22.00</p>
+      </div>
+      <div class="pharmacy">
+        <h3>"ZAM-ZAM PHARM-TRADE" DORIXONASI</h3>
+        <p>Manzil:100142, Toshkent, Mirzo-Ulug'bek tumani, Buyuk Ipak Yo'li ko'chasi, 428</p>
+        <p>Telefon:+998 (71) 264-05-14
+          +998 (71) 261-38-61</p>
+        <p>Vaqt:08.00 - 23.30</p>
+      </div>
+      <div class="pharmacy">
+        <h3>"7777" DORIXONASI №7</h3>
+        <p>Manzil:100097, Toshkent, Chilonzor tumani, Cho'ponota ko'chasi, Chilonzor-6 mavzesi, 44/38</p>
+        <p>Telefon:+998 (71) 278-26-43</p>
+        <p>Vaqt:08.00 - 23.00</p>
+      </div>
+      <div class="pharmacy">
+        <h3>077 NP GPOUP" DORIXONASI</h3>
+        <p>Manzil:100194, Toshkent, Yunusobod tumani, Ahmad Donish ko'chasi, Yunusobod-11 mavzesi, 52</p>
+        <p>Telefon:+998 (90) 744-11-33
+          +998 (90) 014-96-69</p>
+        <p>Vaqt:08.00 - 24.00</p>
+      </div>
+      <div class="pharmacy">
+        <h3>"03" DORIXONASI FILIALI</h3>
+        <p>Manzil:Toshkent, Chilonzor tumani, Gagarin ko'chasi, Chilonzor-1 mavzesi, 65</p>
+        <p>Telefon:+998 (94) 865-03-03</p>
+        <p>Vaqt:Kun bo'yi [24/7]</p>
+      </div>
+      <div class="pharmacy">
+        <h3>"03" DORIXONASI FILIALI</h3>
+        <p>Manzil:100060, Toshkent, Mirobod tumani, Taras Shevchenko ko'chasi, 22</p>
+        <p>Telefon:+998 (95) 146-03-03
+          +998 (71) 256-13-62</p>
+        <p>Vaqt:Kun bo'yi [24/7]</p>
+      </div>
+      <div class="pharmacy">
+        <h3>"+03" DORIXONASI FILIALI</h3>
+        <p>Manzil:Toshkent, Mirzo-Ulug'bek tumani, Buyuk Ipak Yo'li ko'chasi, 152A</p>
+        <p>Telefon:+998 (95) 767-03-03
+          +998 (95) 325-03-03</p>
+        <p>Vaqt:Kun bo'yi [24/7]</p>
+      </div>
+      <div class="pharmacy">
+        <h3>"ROSINKA" DORIXONASI </h3>
+        <p>Manzil: Toshkent, Mirobod tumani, Mexrjon ko'chasi, 45</p>
+        <p>Telefon: +998 (71) 291-50-53</p>
+        <p>Vaqt: Kun bo'yi [24/7]</p>
+      </div>
+      <div class="pharmacy">
+        <h3>"OXYMED" DORIXONALARI BOSH BOSH OFISI</h3>
+        <p>Manzil: 100044, Toshkent, Sirg'ali tumani, Bezakchilik ko'chasi, 18A</p>
+        <p>Telefon: +998 (71) 200-03-03</p>
+        <p>Vaqt: Kun bo'yi [24/7]</p>
+      </div>
+      <div class="pharmacy">
+        <h3>"PHARMACLICK" ONLAYN DORIXONA</h3>
+        <p>Manzil: Toshkent, Chilonzor tumani, Muqimiy ko'chasi, 20B</p>
+        <p>Telefon: +998 (78) 113-13-00</p>
+        <p>Vaqt:  09.00 - 21.00</p>
+      </div>
+      <div class="pharmacy">
+        <h3>ECO MED" DORIXONASI</h3>
+        <p>Manzil: 100070, Toshkent, Yakkasaroy tumani, Sh.Rustaveli ko'chasi, 28</p>
+        <p>Telefon: +998 (90) 908-11-44
+          +998 (90) 348-11-44</p>
+        <p>Vaqt: Kun bo'yi [24/7]</p>
+      </div>
+      <div class="pharmacy">
+        <h3>CITY PHARM" DORIXONASI №1</h3>
+        <p>Manzil: 100100, Toshkent, Yakkasaroy tumani, Sh.Rustaveli ko'chasi, 53/27</p>
+        <p>Telefon: +998 (71) 253-97-21</p>
+        <p>Vaqt: 08.00 - 24.00</p>
+      </div>
+      <div class="pharmacy">
+        <h3>"CITY PHARM" DORIXONASI</h3>
+        <p>Manzil:  Toshkent, Mirzo-Ulug'bek tumani, Osiyo ko'chasi, 17</p>
+        <p>Telefon: +998 (77) 074-97-21</p>
+        <p>Vaqt: Kun bo'yi [24/7]</p>
+      </div>
+      <div class="pharmacy">
+        <h3>"APOTHECA" DORIXONASI, FILIALI</h3>
+        <p>Manzil: 100000, Toshkent, Mirzo-Ulug'bek tumani, Buyuk Ipak Yo'li dahasi, O'zbekiston Ovozi ko'chasi, 6/38</p>
+        <p>Telefon: +998 (99) 336-30-03</p>
+        <p>Vaqt: Kun bo'yi [24/7]</p>
+      </div>
+      <div class="pharmacy">
+        <h3>"APOTHECA" DORIXONASI</h3>
+        <p>Manzil: Toshkent, Olmazor tumani, Kichik Halqa Yo'li ko'chasi, 5A</p>
+        <p>Telefon: +998 (99) 393-30-03</p>
+        <p>Vaqt: Kun bo'yi [24/7]</p>
+      </div>
+      <div class="pharmacy">
+        <h3>"GO DORIXONA" DORI DARMONLARNI YETKAZIB BERISH XIZMATI</h3>
+        <p>Manzil: 100077, Toshkent, Mirzo-Ulug'bek tumani, Arslanobod ko'chasi, 4</p>
+        <p>Telefon: +998 (78) 150-44-44</p>
+        <p>Vaqt: Kun bo'yi [24/7]</p>
+      </div>
+      <div class="pharmacy">
+        <h3>"VITAMINO" DORIXONASI</h3>
+        <p>Manzil:  100047, Toshkent, Mirzo-Ulug'bek tumani, Buyuk Ipak Yo'li dahasi, 9</p>
+        <p>Telefon: +998 (95) 088-90-55</p>
+        <p>Vaqt: Kun bo'yi [24/7]</p>
+      </div>
+      <div class="pharmacy">
+        <h3>"PHARMA COSMOS" DORIXONASI</h3>
+        <p>Manzil: 100208, Toshkent, Uchtepa tumani, Chilonzor-31 mavzesi, Qovunchi ko'chasi, 52/127</p>
+        <p>Telefon: +998 (95) 115-58-54</p>
+        <p>Vaqt:  08.00 - 22.00</p>
+      </div>
+  </div>
+
+  <script>
+    const searchBox = document.getElementById('searchBox');
+    const pharmacies = document.querySelectorAll('.pharmacy');
+
+    searchBox.addEventListener('input', function() {
+      const value = this.value.toLowerCase();
+      pharmacies.forEach(pharmacy => {
+        const text = pharmacy.textContent.toLowerCase();
+        pharmacy.style.display = text.includes(value) ? 'block' : 'none';
+      });
+    });
+  </script>
+    <script>
+    const list = document.getElementById("pharmacyList");
+    const input = document.getElementById("searchInput");
+
+    function renderList(data) {
+      list.innerHTML = "";
+      data.forEach(d => {
+        list.innerHTML += 
+          <div class="pharmacy">
+            <h2>${d.nomi}</h2>
+            <p><span class="highlight">Manzil:</span> ${d.manzil}</p>
+            <p><span class="highlight">Telefon:</span> ${d.telefon}</p>
+            <p><span class="highlight">Ish vaqti:</span> ${d.vaqt}</p>
+          </div>
+        ;
+      });
+    }
+
+    input.addEventListener("input", () => {
+      const value = input.value.toLowerCase();
+      const filtered = dorixonalar.filter(d =>
+        d.nomi.toLowerCase().includes(value) || d.manzil.toLowerCase().includes(value)
+      );
+      renderList(filtered);
+    });
+
+    renderList(dorixonalar);
+   {
+      list.innerHTML = "";
+      data.forEach(d => {
+        list.innerHTML += 
+          <div class="pharmacy">
+            <h2>${d.nomi}</h2>
+            <p><span class="highlight">Manzil:</span> ${d.manzil}</p>
+            <p><span class="highlight">Telefon:</span> ${d.telefon}</p>
+            <p><span class="highlight">Ish vaqti:</span> ${d.vaqt}</p>
+          </div>
+        ;
+      })
+    };
+  
+      const value = input.value.toLowerCase();
+      const filtered = dorixonalar.filter(d =>
+        d.nomi.toLowerCase().includes(value) || d.manzil.toLowerCase().includes(value)
+      );
+      renderList(filtered);

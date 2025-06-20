@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Teri kasalliklariga qarshi dorilar.css">
+</head>
+<body>
+    <h1>Teri kasalliklariga qarshi dorilar</h1>
+
+    <h1><input type="text" id="searchInput" onkeyup="searchCards()" placeholder="Dori nomini yoki simptomini kiriting..." class="search-bar"></h1>
+
+    <div class="med-card">
+        <h3>Diclofenac</h3>
+        <p><strong>Klass:</strong> Yallig‘lanishga qarshi nesteroid dori</p>
+        <p><strong>Qo‘llaniladi:</strong> Og‘riq va yallig‘lanishni kamaytirish</p>
+        <p><strong>Dozalash:</strong> 50 mg kuniga 2-3 marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Loratadine</h3>
+        <p><strong>Klass:</strong> Antigistamin</p>
+        <p><strong>Qo‘llaniladi:</strong> Allergik burun oqishi, toshmalar</p>
+        <p><strong>Dozalash:</strong> Kuniga 10 mg bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Metformin</h3>
+        <p><strong>Klass:</strong> Antidiabetik (biguanidlar)</p>
+        <p><strong>Qo‘llaniladi:</strong> Qandli diabetni davolash</p>
+        <p><strong>Dozalash:</strong> 500–1000 mg kuniga 2 marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Amoxicillin</h3>
+        <p><strong>Klass:</strong> Penisillin turidagi antibiotik</p>
+        <p><strong>Qo‘llaniladi:</strong> Bakterial infeksiyalar</p>
+        <p><strong>Dozalash:</strong> 500 mg har 8 soatda</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Omeprazole</h3>
+        <p><strong>Klass:</strong> Proton nasos inhibitörü</p>
+        <p><strong>Qo‘llaniladi:</strong> Me’da yarasi, reflyuks</p>
+        <p><strong>Dozalash:</strong> 20–40 mg kuniga bir marta</p>
+      </div>
+
+      <div class="med-card">
+        <h3>Cetirizine</h3>
+        <p><strong>Klass:</strong> Antigistamin</p>
+        <p><strong>Qo‘llaniladi:</strong> Allergik toshmalar, burun oqishi</p>
+        <p><strong>Dozalash:</strong> Kuniga 10 mg</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Amlodipine</h3>
+        <p><strong>Klass:</strong> Kaltsiy kanali blokatori</p>
+        <p><strong>Qo‘llaniladi:</strong> Qon bosimini tushirish</p>
+        <p><strong>Dozalash:</strong> 5–10 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Ibuprofen</h3>
+        <p><strong>Klass:</strong> Nesteroid yallig‘lanishga qarshi</p>
+        <p><strong>Qo‘llaniladi:</strong> Og‘riq, isitma, yallig‘lanish</p>
+        <p><strong>Dozalash:</strong> 200–400 mg har 6-8 soatda</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Atorvastatin</h3>
+        <p><strong>Klass:</strong> Statin (lipid pasaytiruvchi)</p>
+        <p><strong>Qo‘llaniladi:</strong> Xolesterin pasaytirish</p>
+        <p><strong>Dozalash:</strong> 10–80 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Ranitidine</h3>
+        <p><strong>Klass:</strong> H2 blokeri</p>
+        <p><strong>Qo‘llaniladi:</strong> Me’da kislotasini kamaytirish</p>
+        <p><strong>Dozalash:</strong> 150 mg kuniga 2 marta</p>
+      </div>
+   
+      <div class="med-card">
+        <h3>Paracetamol</h3>
+        <p><strong>Klass:</strong> Antipiretik, analjezik</p>
+        <p><strong>Qo‘llaniladi:</strong> Og‘riq va isitma</p>
+        <p><strong>Dozalash:</strong> 500–1000 mg har 4–6 soatda</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Furosemide</h3>
+        <p><strong>Klass:</strong> Diuretik</p>
+        <p><strong>Qo‘llaniladi:</strong> Shish, yurak yetishmovchiligi</p>
+        <p><strong>Dozalash:</strong> 20–80 mg kuniga bir yoki ikki marta</p>
+      </div>
+   
+      <div class="med-card">
+        <h3>Enalapril</h3>
+        <p><strong>Klass:</strong> ACE-ingibitori</p>
+        <p><strong>Qo‘llaniladi:</strong> Qon bosimini tushirish, yurak yetishmovchiligi</p>
+        <p><strong>Dozalash:</strong> 5–20 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Spironolactone</h3>
+        <p><strong>Klass:</strong> Kaliy tejovchi diuretik</p>
+        <p><strong>Qo‘llaniladi:</strong> Giperaldosteronizm, shish</p>
+        <p><strong>Dozalash:</strong> 25–100 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Levothyroxine</h3>
+        <p><strong>Klass:</strong> Gormonal dori</p>
+        <p><strong>Qo‘llaniladi:</strong> Gipotireoz</p>
+        <p><strong>Dozalash:</strong> 25–100 mcg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Ciprofloxacin</h3>
+        <p><strong>Klass:</strong> Fluoroxinolon antibiotik</p>
+        <p><strong>Qo‘llaniladi:</strong> Bakterial infeksiyalar</p>
+        <p><strong>Dozalash:</strong> 250–500 mg har 12 soatda</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Fluconazole</h3>
+        <p><strong>Klass:</strong> Antifungal (zamburug‘larga qarshi)</p>
+        <p><strong>Qo‘llaniladi:</strong> Kandidoz, zamburug‘ infeksiyalari</p>
+        <p><strong>Dozalash:</strong> 150 mg haftasiga bir marta yoki ko‘ra</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Dexamethasone</h3>
+        <p><strong>Klass:</strong> Kortikosteroid</p>
+        <p><strong>Qo‘llaniladi:</strong> Yallig‘lanish va allergiya holatlari</p>
+        <p><strong>Dozalash:</strong> 0.5–6 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Warfarin</h3>
+        <p><strong>Klass:</strong> Antikoagulyant (qonni suyultiruvchi)</p>
+        <p><strong>Qo‘llaniladi:</strong> Tromboz profilaktikasi</p>
+        <p><strong>Dozalash:</strong> 2–10 mg kuniga, INR bo‘yicha moslanadi</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Salbutamol</h3>
+        <p><strong>Klass:</strong> Beta2-agonist (bronxodilatator)</p>
+        <p><strong>Qo‘llaniladi:</strong> Astma va bronxospazm</p>
+        <p><strong>Dozalash:</strong> 100–200 mcg, zarur bo‘lganda</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Loperamide</h3>
+        <p><strong>Klass:</strong> Antidiarreya vositasi</p>
+        <p><strong>Qo‘llaniladi:</strong> Ich ketish</p>
+        <p><strong>Dozalash:</strong> 2 mg, har ich ketish holatidan so‘ng</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Pantoprazole</h3>
+        <p><strong>Klass:</strong> Proton nasos inhibitori</p>
+        <p><strong>Qo‘llaniladi:</strong> Me’da kislotasi bilan bog‘liq kasalliklar</p>
+        <p><strong>Dozalash:</strong> 40 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Aspirin</h3>
+        <p><strong>Klass:</strong> Antiplatelet, yallig‘lanishga qarshi</p>
+        <p><strong>Qo‘llaniladi:</strong> Yurak xurujini oldini olish</p>
+        <p><strong>Dozalash:</strong> 75–100 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Insulin glargine</h3>
+        <p><strong>Klass:</strong> Uzaytirilgan ta’sirli insulin</p>
+        <p><strong>Qo‘llaniladi:</strong> 1- va 2-tur diabet</p>
+        <p><strong>Dozalash:</strong> Shaxsiylashtiriladi, kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Prednisolone</h3>
+        <p><strong>Klass:</strong> Kortikosteroid</p>
+        <p><strong>Qo‘llaniladi:</strong> Allergiya, yallig‘lanish, autoimmun holatlar</p>
+        <p><strong>Dozalash:</strong> 5–60 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Azithromycin</h3>
+        <p><strong>Klass:</strong> Antibiotik (makrolid)</p>
+        <p><strong>Qo‘llaniladi:</strong> Nafas yo‘li infeksiyalari, teri infeksiyalari</p>
+        <p><strong>Dozalash:</strong> 500 mg 1-kuni, so‘ng 250 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Losartan</h3>
+        <p><strong>Klass:</strong> ARB (angiotenzin II retseptor blokatori)</p>
+        <p><strong>Qo‘llaniladi:</strong> Qon bosimi, buyraklarni himoya qilish</p>
+        <p><strong>Dozalash:</strong> 50–100 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Domperidone</h3>
+        <p><strong>Klass:</strong> Antiemetik</p>
+        <p><strong>Qo‘llaniladi:</strong> Ko‘ngil aynishi, qusish</p>
+        <p><strong>Dozalash:</strong> 10 mg kuniga 3 marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Bisoprolol</h3>
+        <p><strong>Klass:</strong> Beta-blokator</p>
+        <p><strong>Qo‘llaniladi:</strong> Yurak tez urishi, qon bosimi</p>
+        <p><strong>Dozalash:</strong> 5–10 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Chlorpheniramine</h3>
+        <p><strong>Klass:</strong> Antigistamin (1-avlod)</p>
+        <p><strong>Qo‘llaniladi:</strong> Allergik reaktsiyalar</p>
+        <p><strong>Dozalash:</strong> 4 mg har 4-6 soatda</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Gabapentin</h3>
+        <p><strong>Klass:</strong> Antikonvulsant</p>
+        <p><strong>Qo‘llaniladi:</strong> Neyropatik og‘riq, qaltislik</p>
+        <p><strong>Dozalash:</strong> 300–900 mg kuniga bo‘lib ichiladi</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Nitrofurantoin</h3>
+        <p><strong>Klass:</strong> Antibakterial (siydik yo‘llari uchun)</p>
+        <p><strong>Qo‘llaniladi:</strong> Siydik yo‘li infeksiyalari</p>
+        <p><strong>Dozalash:</strong> 100 mg kuniga 2-4 marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Clopidogrel</h3>
+        <p><strong>Klass:</strong> Antiplatelet</p>
+        <p><strong>Qo‘llaniladi:</strong> Yurak xurujining oldini olish</p>
+        <p><strong>Dozalash:</strong> 75 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Risperidone</h3>
+        <p><strong>Klass:</strong> Antipsixotik</p>
+        <p><strong>Qo‘llaniladi:</strong> Shizofreniya, bipolyar buzilish</p>
+        <p><strong>Dozalash:</strong> 1–6 mg kuniga bo‘lib ichiladi</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Hydrochlorothiazide</h3>
+        <p><strong>Klass:</strong> Tiyazid diuretik</p>
+        <p><strong>Qo‘llaniladi:</strong> Gipertenziya, suyuqlik yig‘ilishi</p>
+        <p><strong>Dozalash:</strong> 12.5–25 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Montelukast</h3>
+        <p><strong>Klass:</strong> Leukotrien retseptori antagonisti</p>
+        <p><strong>Qo‘llaniladi:</strong> Astma, allergik rinit</p>
+        <p><strong>Dozalash:</strong> 10 mg kechqurun</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Propranolol</h3>
+        <p><strong>Klass:</strong> Beta-blokator</p>
+        <p><strong>Qo‘llaniladi:</strong> Yurak urishining buzilishi, migren</p>
+        <p><strong>Dozalash:</strong> 40–160 mg kuniga 2-3 marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Clindamycin</h3>
+        <p><strong>Klass:</strong> Antibiotik</p>
+        <p><strong>Qo‘llaniladi:</strong> Teri va suyak infeksiyalari</p>
+        <p><strong>Dozalash:</strong> 150–300 mg har 6 soatda</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Lamotrigine</h3>
+        <p><strong>Klass:</strong> Antikonvulsant</p>
+        <p><strong>Qo‘llaniladi:</strong> Epilepsiya, bipolyar buzilish</p>
+        <p><strong>Dozalash:</strong> 25–200 mg kuniga bo‘lib ichiladi</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Topiramate</h3>
+        <p><strong>Klass:</strong> Antikonvulsant</p>
+        <p><strong>Qo‘llaniladi:</strong> Epilepsiya, migren profilaktikasi</p>
+        <p><strong>Dozalash:</strong> 25–100 mg kuniga bo‘lib</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Verapamil</h3>
+        <p><strong>Klass:</strong> Kaltsiy kanali blokatori</p>
+        <p><strong>Qo‘llaniladi:</strong> Yurak ritmi va gipertenziya</p>
+        <p><strong>Dozalash:</strong> 120–240 mg kuniga 2 marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Allopurinol</h3>
+        <p><strong>Klass:</strong> Urik kislotani kamaytiruvchi</p>
+        <p><strong>Qo‘llaniladi:</strong> Podagra, yuqori urat darajalari</p>
+        <p><strong>Dozalash:</strong> 100–300 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Citalopram</h3>
+        <p><strong>Klass:</strong> SSRI antidepressant</p>
+        <p><strong>Qo‘llaniladi:</strong> Depressiya, xavotirli holatlar</p>
+        <p><strong>Dozalash:</strong> 20–40 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Levofloxacin</h3>
+        <p><strong>Klass:</strong> Antibiotik (fluoroxinolon)</p>
+        <p><strong>Qo‘llaniladi:</strong> Nafas va siyish yo‘llari infeksiyalari</p>
+        <p><strong>Dozalash:</strong> 250–500 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Digoxin</h3>
+        <p><strong>Klass:</strong> Yurak glikozidi</p>
+        <p><strong>Qo‘llaniladi:</strong> Yurak yetishmovchiligi, fibrilatsiya</p>
+        <p><strong>Dozalash:</strong> 0.125–0.25 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Quetiapine</h3>
+        <p><strong>Klass:</strong> Atipik antipsixotik</p>
+        <p><strong>Qo‘llaniladi:</strong> Bipolyar buzilish, shizofreniya</p>
+        <p><strong>Dozalash:</strong> 50–400 mg kuniga bo‘lib ichiladi</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Nifedipine</h3>
+        <p><strong>Klass:</strong> Kaltsiy antagonisti</p>
+        <p><strong>Qo‘llaniladi:</strong> Gipertenziya, angina</p>
+        <p><strong>Dozalash:</strong> 10–30 mg kuniga 2 marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Phenobarbital</h3>
+        <p><strong>Klass:</strong> Barbiturat (antikonvulsant)</p>
+        <p><strong>Qo‘llaniladi:</strong> Qaltislik, uyqu buzilishi</p>
+        <p><strong>Dozalash:</strong> 30–120 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Sertraline</h3>
+        <p><strong>Klass:</strong> SSRI antidepressant</p>
+        <p><strong>Qo‘llaniladi:</strong> Depressiya, obsesif-kompulsiv buzilish</p>
+        <p><strong>Dozalash:</strong> 50–100 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Trimethoprim/Sulfamethoxazole</h3>
+        <p><strong>Klass:</strong> Kombinatsiyalangan antibiotik</p>
+        <p><strong>Qo‘llaniladi:</strong> Siydik yo‘li infeksiyalari, bronxit</p>
+        <p><strong>Dozalash:</strong> 160/800 mg har 12 soatda</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Desloratadine</h3>
+        <p><strong>Klass:</strong> Antigistamin (uzoq ta’sirli)</p>
+        <p><strong>Qo‘llaniladi:</strong> Allergiya, burun oqishi</p>
+        <p><strong>Dozalash:</strong> 5 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Rivaroxaban</h3>
+        <p><strong>Klass:</strong> To‘g‘ridan-to‘g‘ri antikoagulyant</p>
+        <p><strong>Qo‘llaniladi:</strong> Tromboz profilaktikasi, AFib</p>
+        <p><strong>Dozalash:</strong> 10–20 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Pioglitazone</h3>
+        <p><strong>Klass:</strong> Antidiabetik (TZD)</p>
+        <p><strong>Qo‘llaniladi:</strong> 2-tur diabet</p>
+        <p><strong>Dozalash:</strong> 15–45 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Meloxicam</h3>
+        <p><strong>Klass:</strong> NSAID</p>
+        <p><strong>Qo‘llaniladi:</strong> Og‘riq, artrit</p>
+      </div>
+
+      <div class="med-card">
+        <h3>Clopidogrel</h3>
+        <p><strong>Klass:</strong> Antiplatelet</p>
+        <p><strong>Qo‘llaniladi:</strong> Yurak xurujining oldini olish</p>
+        <p><strong>Dozalash:</strong> 75 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Risperidone</h3>
+        <p><strong>Klass:</strong> Antipsixotik</p>
+        <p><strong>Qo‘llaniladi:</strong> Shizofreniya, bipolyar buzilish</p>
+        <p><strong>Dozalash:</strong> 1–6 mg kuniga bo‘lib ichiladi</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Hydrochlorothiazide</h3>
+        <p><strong>Klass:</strong> Tiyazid diuretik</p>
+        <p><strong>Qo‘llaniladi:</strong> Gipertenziya, suyuqlik yig‘ilishi</p>
+        <p><strong>Dozalash:</strong> 12.5–25 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Montelukast</h3>
+        <p><strong>Klass:</strong> Leukotrien retseptori antagonisti</p>
+        <p><strong>Qo‘llaniladi:</strong> Astma, allergik rinit</p>
+        <p><strong>Dozalash:</strong> 10 mg kechqurun</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Propranolol</h3>
+        <p><strong>Klass:</strong> Beta-blokator</p>
+        <p><strong>Qo‘llaniladi:</strong> Yurak urishining buzilishi, migren</p>
+        <p><strong>Dozalash:</strong> 40–160 mg kuniga 2-3 marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Clindamycin</h3>
+        <p><strong>Klass:</strong> Antibiotik</p>
+        <p><strong>Qo‘llaniladi:</strong> Teri va suyak infeksiyalari</p>
+        <p><strong>Dozalash:</strong> 150–300 mg har 6 soatda</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Lamotrigine</h3>
+        <p><strong>Klass:</strong> Antikonvulsant</p>
+        <p><strong>Qo‘llaniladi:</strong> Epilepsiya, bipolyar buzilish</p>
+        <p><strong>Dozalash:</strong> 25–200 mg kuniga bo‘lib ichiladi</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Topiramate</h3>
+        <p><strong>Klass:</strong> Antikonvulsant</p>
+        <p><strong>Qo‘llaniladi:</strong> Epilepsiya, migren profilaktikasi</p>
+        <p><strong>Dozalash:</strong> 25–100 mg kuniga bo‘lib</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Verapamil</h3>
+        <p><strong>Klass:</strong> Kaltsiy kanali blokatori</p>
+        <p><strong>Qo‘llaniladi:</strong> Yurak ritmi va gipertenziya</p>
+        <p><strong>Dozalash:</strong> 120–240 mg kuniga 2 marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Allopurinol</h3>
+        <p><strong>Klass:</strong> Urik kislotani kamaytiruvchi</p>
+        <p><strong>Qo‘llaniladi:</strong> Podagra, yuqori urat darajalari</p>
+        <p><strong>Dozalash:</strong> 100–300 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Citalopram</h3>
+        <p><strong>Klass:</strong> SSRI antidepressant</p>
+        <p><strong>Qo‘llaniladi:</strong> Depressiya, xavotirli holatlar</p>
+        <p><strong>Dozalash:</strong> 20–40 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Levofloxacin</h3>
+        <p><strong>Klass:</strong> Antibiotik (fluoroxinolon)</p>
+        <p><strong>Qo‘llaniladi:</strong> Nafas va siyish yo‘llari infeksiyalari</p>
+        <p><strong>Dozalash:</strong> 250–500 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Digoxin</h3>
+        <p><strong>Klass:</strong> Yurak glikozidi</p>
+        <p><strong>Qo‘llaniladi:</strong> Yurak yetishmovchiligi, fibrilatsiya</p>
+        <p><strong>Dozalash:</strong> 0.125–0.25 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Quetiapine</h3>
+        <p><strong>Klass:</strong> Atipik antipsixotik</p>
+        <p><strong>Qo‘llaniladi:</strong> Bipolyar buzilish, shizofreniya</p>
+        <p><strong>Dozalash:</strong> 50–400 mg kuniga bo‘lib ichiladi</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Nifedipine</h3>
+        <p><strong>Klass:</strong> Kaltsiy antagonisti</p>
+        <p><strong>Qo‘llaniladi:</strong> Gipertenziya, angina</p>
+        <p><strong>Dozalash:</strong> 10–30 mg kuniga 2 marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Phenobarbital</h3>
+        <p><strong>Klass:</strong> Barbiturat (antikonvulsant)</p>
+        <p><strong>Qo‘llaniladi:</strong> Qaltislik, uyqu buzilishi</p>
+        <p><strong>Dozalash:</strong> 30–120 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Sertraline</h3>
+        <p><strong>Klass:</strong> SSRI antidepressant</p>
+        <p><strong>Qo‘llaniladi:</strong> Depressiya, obsesif-kompulsiv buzilish</p>
+        <p><strong>Dozalash:</strong> 50–100 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Trimethoprim/Sulfamethoxazole</h3>
+        <p><strong>Klass:</strong> Kombinatsiyalangan antibiotik</p>
+        <p><strong>Qo‘llaniladi:</strong> Siydik yo‘li infeksiyalari, bronxit</p>
+        <p><strong>Dozalash:</strong> 160/800 mg har 12 soatda</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Desloratadine</h3>
+        <p><strong>Klass:</strong> Antigistamin (uzoq ta’sirli)</p>
+        <p><strong>Qo‘llaniladi:</strong> Allergiya, burun oqishi</p>
+        <p><strong>Dozalash:</strong> 5 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Rivaroxaban</h3>
+        <p><strong>Klass:</strong> To‘g‘ridan-to‘g‘ri antikoagulyant</p>
+        <p><strong>Qo‘llaniladi:</strong> Tromboz profilaktikasi, AFib</p>
+        <p><strong>Dozalash:</strong> 10–20 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Pioglitazone</h3>
+        <p><strong>Klass:</strong> Antidiabetik (TZD)</p>
+        <p><strong>Qo‘llaniladi:</strong> 2-tur diabet</p>
+        <p><strong>Dozalash:</strong> 15–45 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Meloxicam</h3>
+        <p><strong>Klass:</strong> NSAID</p>
+        <p><strong>Qo‘llaniladi:</strong> Og‘riq, artrit</p>
+      </div>
+      <div class="med-card">
+        <h3>Doxycycline</h3>
+        <p><strong>Klass:</strong> Antibiotik (tetratsiklin guruhi)</p>
+        <p><strong>Qo‘llaniladi:</strong> Akne, bakterial infeksiyalar</p>
+        <p><strong>Dozalash:</strong> 100 mg kuniga 1–2 marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Metoclopramide</h3>
+        <p><strong>Klass:</strong> Antiemetik, prokinetik</p>
+        <p><strong>Qo‘llaniladi:</strong> Ko‘ngil aynishi, gastroparez</p>
+        <p><strong>Dozalash:</strong> 10 mg kuniga 3–4 marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Valproic Acid</h3>
+        <p><strong>Klass:</strong> Antikonvulsant</p>
+        <p><strong>Qo‘llaniladi:</strong> Epilepsiya, bipolyar buzilish</p>
+        <p><strong>Dozalash:</strong> 250–1000 mg kuniga bo‘lib</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Budesonide</h3>
+        <p><strong>Klass:</strong> Ingalatsion kortikosteroid</p>
+        <p><strong>Qo‘llaniladi:</strong> Astma, KOPB</p>
+        <p><strong>Dozalash:</strong> 200–800 mcg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Linezolid</h3>
+        <p><strong>Klass:</strong> Antibiotik (oksazolidinon)</p>
+        <p><strong>Qo‘llaniladi:</strong> Og‘ir gram-ijobiy infeksiyalar</p>
+        <p><strong>Dozalash:</strong> 600 mg har 12 soatda</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Nebivolol</h3>
+        <p><strong>Klass:</strong> Beta-blokator</p>
+        <p><strong>Qo‘llaniladi:</strong> Gipertenziya</p>
+        <p><strong>Dozalash:</strong> 5 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Candesartan</h3>
+        <p><strong>Klass:</strong> ARB (angiotenzin retseptor blokatori)</p>
+        <p><strong>Qo‘llaniladi:</strong> Qon bosimi, yurak yetishmovchiligi</p>
+        <p><strong>Dozalash:</strong> 8–32 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Carbamazepine</h3>
+        <p><strong>Klass:</strong> Antikonvulsant</p>
+        <p><strong>Qo‘llaniladi:</strong> Epilepsiya, nevralgiya</p>
+        <p><strong>Dozalash:</strong> 200–600 mg kuniga bo‘lib</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Olanzapine</h3>
+        <p><strong>Klass:</strong> Antipsixotik</p>
+        <p><strong>Qo‘llaniladi:</strong> Bipolyar, shizofreniya</p>
+        <p><strong>Dozalash:</strong> 5–20 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Hydroxychloroquine</h3>
+        <p><strong>Klass:</strong> Antimalarial, immunomodulyator</p>
+        <p><strong>Qo‘llaniladi:</strong> Romatoid artrit, lupus</p>
+        <p><strong>Dozalash:</strong> 200–400 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Temazepam</h3>
+        <p><strong>Klass:</strong> Benzodiazepin (uyqu uchun)</p>
+        <p><strong>Qo‘llaniladi:</strong> Uyqusizlik</p>
+        <p><strong>Dozalash:</strong> 15–30 mg kechasi</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Esomeprazole</h3>
+        <p><strong>Klass:</strong> Proton nasos inhibitori</p>
+        <p><strong>Qo‘llaniladi:</strong> Me’da yarasi, reflyuks</p>
+        <p><strong>Dozalash:</strong> 20–40 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Haloperidol</h3>
+        <p><strong>Klass:</strong> Tipik antipsixotik</p>
+        <p><strong>Qo‘llaniladi:</strong> Psixoz, ajitatsiya</p>
+        <p><strong>Dozalash:</strong> 1–5 mg kuniga bo‘lib</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Methylprednisolone</h3>
+        <p><strong>Klass:</strong> Kortikosteroid</p>
+        <p><strong>Qo‘llaniladi:</strong> Yallig‘lanish, allergiya</p>
+        <p><strong>Dozalash:</strong> 4–48 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Alprazolam</h3>
+        <p><strong>Klass:</strong> Benzodiazepin</p>
+        <p><strong>Qo‘llaniladi:</strong> Tashvish, vahima</p>
+        <p><strong>Dozalash:</strong> 0.25–0.5 mg kuniga 2-3 marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Nicorandil</h3>
+        <p><strong>Klass:</strong> Vazodilatator</p>
+        <p><strong>Qo‘llaniladi:</strong> Yurak ishemiyasi</p>
+        <p><strong>Dozalash:</strong> 5–10 mg kuniga 2 marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Ranitidine Bismuth Citrate</h3>
+        <p><strong>Klass:</strong> Antisecretor va gastromukoprotektor</p>
+        <p><strong>Qo‘llaniladi:</strong> H. pylori eradikatsiyasi</p>
+        <p><strong>Dozalash:</strong> 400 mg kuniga 2 marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Fluoxetine</h3>
+        <p><strong>Klass:</strong> SSRI antidepressant</p>
+        <p><strong>Qo‘llaniladi:</strong> Depressiya, obsesif buzilish</p>
+        <p><strong>Dozalash:</strong> 20–40 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Ondansetron</h3>
+        <p><strong>Klass:</strong> Antiemetik (5-HT3 antagonisti)</p>
+        <p><strong>Qo‘llaniladi:</strong> Ko‘ngil aynishi, qusish</p>
+        <p><strong>Dozalash:</strong> 4–8 mg zarur bo‘lganda</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Febuxostat</h3>
+        <p><strong>Klass:</strong> Urik kislotani kamaytiruvchi</p>
+        <p><strong>Qo‘llaniladi:</strong> Podagra</p>
+        <p><strong>Dozalash:</strong> 40–80 mg kuniga bir marta</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Amiodarone</h3>
+        <p><strong>Klass:</strong> Antiaritmik</p>
+        <p><strong>Qo‘llaniladi:</strong> Yurak ritm buzilishi</p>
+        <p><strong>Dozalash:</strong> 200–400 mg kuniga</p>
+      </div>
+      
+      <div class="med-card">
+        <h3>Ethinyl estradiol/Norgestimate</h3>
+        <p><strong>Klass:</strong> Kombinatsiyalangan kontratseptiv</p>
+        <p><strong>Qo‘llaniladi:</strong> Homiladorlikni oldini olish</p>
+        <p><strong>Dozalash:</strong> Kunlik 1 tabletka</p>
+      </div>
+      
+<script>
+          function searchCards() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let cards = document.getElementsByClassName("med-card");
+  
+    for (let i = 0; i < cards.length; i++) {
+      let cardText = cards[i].innerText.toLowerCase();
+      cards[i].style.display = cardText.includes(input) ? "block" : "none";
+    }
+  }
+    </script>
+</body>
+</html>

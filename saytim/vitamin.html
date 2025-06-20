@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Vitaminlar</title>
+    <link rel="stylesheet" href="vitamin.css">
+</head>
+<body>
+    <h1>Vitaminlar Ro‘yxati</h1>
+
+
+    <input type="text" id="searchInput" placeholder="Dori nomini kiriting..." onkeyup="searchCards()">
+
+<script>
+function searchCards() {
+  let input = document.getElementById("searchInput").value.toLowerCase();
+  let cards = document.getElementsByClassName("medicine-card");
+
+  for (let i = 0; i < cards.length; i++) {
+    let cardText = cards[i].innerText.toLowerCase();
+    cards[i].style.display = cardText.includes(input) ? "block" : "none";
+  }
+}
+</script>
+    <div class="medicine-card">
+        <h3>1. Vitamin A</h3>
+        <p><strong>Foydasi:</strong> Ko‘rish qobiliyatini yaxshilaydi, immunitetni kuchaytiradi.</p>
+        <p><strong>Manbalari:</strong> Sabzi, yog‘li baliq, tuxum, sut.</p>
+    </div>
+    
+    <div class="medicine-card">
+        <h3>2. Vitamin B1 (Tiamin)</h3>
+        <p><strong>Foydasi:</strong> Asab tizimi faoliyatini qo‘llab-quvvatlaydi.</p>
+        <p><strong>Manbalari:</strong> Bug‘doy, loviya, yong‘oqlar, go‘sht.</p>
+    </div>
+    
+    <div class="medicine-card">
+        <h3>3. Vitamin B2 (Riboflavin)</h3>
+        <p><strong>Foydasi:</strong> Energiya ishlab chiqarishda yordam beradi.</p>
+        <p><strong>Manbalari:</strong> Sut mahsulotlari, tuxum, yashil sabzavotlar.</p>
+    </div>
+    
+    <div class="medicine-card">
+        <h3>4. Vitamin B3 (Niatsin)</h3>
+        <p><strong>Foydasi:</strong> Nerv va ovqat hazm qilish tizimini qo‘llab-quvvatlaydi.</p>
+        <p><strong>Manbalari:</strong> Go‘sht, baliq, yer yong‘oq.</p>
+    </div>
+    
+    <div class="medicine-card">
+        <h3>5. Vitamin B5 (Pantoten kislotasi)</h3>
+        <p><strong>Foydasi:</strong> Gormonlar ishlab chiqarilishi va energiya almashinuvida ishtirok etadi.</p>
+        <p><strong>Manbalari:</strong> Tuxum, sabzavotlar, don mahsulotlari.</p>
+    </div>
+    
+    <div class="medicine-card">
+        <h3>6. Vitamin B6 (Piridoksin)</h3>
+        <p><strong>Foydasi:</strong> Protein almashinuviga yordam beradi, asab tizimi uchun foydali.</p>
+        <p><strong>Manbalari:</strong> Go‘sht, banan, kartoshka.</p>
+    </div>
+    
+    <div class="medicine-card">
+        <h3>7. Vitamin B7 (Biotin)</h3>
+        <p><strong>Foydasi:</strong> Soch, teri va tirnoqlar salomatligi uchun muhim.</p>
+        <p><strong>Manbalari:</strong> Tuxum sarig‘i, yong‘oqlar, donlar.</p>
+    </div>
+    
+    <div class="medicine-card">
+        <h3>8. Vitamin B9 (Folat)</h3>
+        <p><strong>Foydasi:</strong> Homiladorlikda muhim, hujayra bo‘linishini qo‘llab-quvvatlaydi.</p>
+        <p><strong>Manbalari:</strong> Yashil sabzavotlar, mevalar, dukkaklilar.</p>
+    </div>
+    
+    <div class="medicine-card">
+        <h3>9. Vitamin B12 (Kobalamin)</h3>
+        <p><strong>Foydasi:</strong> Qon hosil bo‘lishi va asab tizimi faoliyatida ishtirok etadi.</p>
+        <p><strong>Manbalari:</strong> Hayvonot mahsulotlari: go‘sht, tuxum, sut.</p>
+    </div>
+    
+    <div class="medicine-card">
+        <h3>10. Vitamin C (Askorbin kislotasi)</h3>
+        <p><strong>Foydasi:</strong> Immunitetni kuchaytiradi, yaralarning bitishiga yordam beradi.</p>
+        <p><strong>Manbalari:</strong> Sitrus mevalar, qalampir, qulupnay.</p>
+    </div>
+    
+    <div class="medicine-card">
+        <h3>11. Vitamin D</h3>
+        <p><strong>Foydasi:</strong> Suyaklarni mustahkamlash, kaltsiyni so‘rilishini ta’minlaydi.</p>
+        <p><strong>Manbalari:</strong> Quyosh nuri, yog‘li baliq, tuxum sarig‘i.</p>
+    </div>
+    
+    <div class="medicine-card">
+        <h3>12. Vitamin E</h3>
+        <p><strong>Foydasi:</strong> Antioksidant, hujayralarni himoya qiladi.</p>
+        <p><strong>Manbalari:</strong> O‘simlik yog‘lari, yong‘oqlar, ismaloq.</p>
+    </div>
+    
+    <div class="medicine-card">
+        <h3>13. Vitamin K</h3>
+        <p><strong>Foydasi:</strong> Qon ivishini ta’minlaydi, suyaklar uchun foydali.</p>
+        <p><strong>Manbalari:</strong> Karam, ismaloq, brokkoli.</p>
+    </div>
+    
+</body>
+</html>

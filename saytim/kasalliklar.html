@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dorilar.css">
+</head>
+<body>
+<h1>Bu yerda 500 dan ortiq kassaliklar va kelib chiqishini topasiz!</h1>
+
+<h1>1. Yuqumli kasalliklar </h1>
+
+<h1><input type="text" id="searchInput" placeholder="kasallik nomini kiriting..." onkeyup="searchCards()"></h1>
+
+
+<div class="med-card">
+    <div class="code">INF001</div>
+    <div class="title">Gripp (Influenza)</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Influenza virusi</div>
+    <div class="section"><strong>Yechimi:</strong> Antiviral dori, dam olish, suyuqlik</div>
+    <div class="section"><strong>Foydasi:</strong> Immun tizimini faollashtiradi</div>
+  </div>
+
+  <div class="med-card">
+    <div class="code">INF002</div>
+    <div class="title">COVID-19</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> SARS-CoV-2 virusi</div>
+    <div class="section"><strong>Yechimi:</strong> Vaksina, antiviral dori, izolatsiya</div>
+    <div class="section"><strong>Foydasi:</strong> Sog‘liq texnologiyalarining rivojlanishiga turtki berdi</div>
+  </div>
+
+  <div class="med-card">
+    <div class="code">INF003</div>
+    <div class="title">Sil (Tuberkulyoz)</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Mycobacterium tuberculosis</div>
+    <div class="section"><strong>Yechimi:</strong> DOTS antibiotik terapiyasi</div>
+    <div class="section"><strong>Foydasi:</strong> Doimiy sog‘liq nazoratini talab qiladi</div>
+  </div>
+
+  <div class="med-card">
+    <div class="code">INF004</div>
+    <div class="title">OIV/OITS</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Odam immunodefitsit virusi (HIV)</div>
+    <div class="section"><strong>Yechimi:</strong> Antiretrovirus terapiya (ART)</div>
+    <div class="section"><strong>Foydasi:</strong> Ijtimoiy ongni oshiradi</div>
+  </div>
+
+  <div class="med-card">
+    <div class="code">INF005</div>
+    <div class="title">Qizamiq</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Morbillivirus</div>
+    <div class="section"><strong>Yechimi:</strong> Vaksina, simptomatik davo</div>
+    <div class="section"><strong>Foydasi:</strong> Vaksinatsiyaga e’tibor ortadi</div>
+  </div>
+
+<div class="med-card">
+    <div class="code">INF006</div>
+    <div class="title">Skarlatina</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Streptococcus pyogenes bakteriyasi</div>
+    <div class="section"><strong>Yechimi:</strong> Antibiotiklar</div>
+    <div class="section"><strong>Foydasi:</strong> Erta davolash orqali og‘ir oqibatlarning oldi olinadi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF007</div>
+    <div class="title">Suvsiz shamollash</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Rinoviruslar</div>
+    <div class="section"><strong>Yechimi:</strong> Dam olish, suyuqlik qabul qilish</div>
+    <div class="section"><strong>Foydasi:</strong> Tana immunitetini mashq qilishi mumkin</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF008</div>
+    <div class="title">Ichburug‘</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Virus, bakteriya yoki parazit</div>
+    <div class="section"><strong>Yechimi:</strong> Antibiotiklar, rehidrasiya</div>
+    <div class="section"><strong>Foydasi:</strong> Gigiyena talablariga rioya qilish zarurligini eslatadi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF009</div>
+    <div class="title">Gepatit A</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> A virusli gepatit</div>
+    <div class="section"><strong>Yechimi:</strong> Vaksina, simptomatik davo</div>
+    <div class="section"><strong>Foydasi:</strong> Toza suv va ovqat gigiyenasiga e’tibor kuchayadi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF010</div>
+    <div class="title">Gepatit B</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> B virusli gepatit (qon orqali)</div>
+    <div class="section"><strong>Yechimi:</strong> Antiviral davo, vaksina</div>
+    <div class="section"><strong>Foydasi:</strong> Qon bilan ishlashda ehtiyot choralarini oshiradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF011</div>
+    <div class="title">Ebola</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Filovirus</div>
+    <div class="section"><strong>Yechimi:</strong> Qo‘llab-quvvatlovchi davolash</div>
+    <div class="section"><strong>Foydasi:</strong> Epidemiologiya tizimlarini kuchaytiradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF012</div>
+    <div class="title">Vabo</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Vibrio cholerae bakteriyasi</div>
+    <div class="section"><strong>Yechimi:</strong> Rehidrasiya, antibiotiklar</div>
+    <div class="section"><strong>Foydasi:</strong> Sanitariya holatini yaxshilashga sabab bo‘ladi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF013</div>
+    <div class="title">Dengue bezgagi</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Aedes chivini orqali virus</div>
+    <div class="section"><strong>Yechimi:</strong> Dam olish, simptomatik davo</div>
+    <div class="section"><strong>Foydasi:</strong> Vektor nazorati kuchayadi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF014</div>
+    <div class="title">Zika virusi</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Chivinlar orqali</div>
+    <div class="section"><strong>Yechimi:</strong> Simptomatik davo</div>
+    <div class="section"><strong>Foydasi:</strong> Homilador ayollarda monitoring ehtiyoji kuchayadi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF015</div>
+    <div class="title">Tif isitmasi</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Salmonella typhi bakteriyasi</div>
+    <div class="section"><strong>Yechimi:</strong> Antibiotiklar</div>
+    <div class="section"><strong>Foydasi:</strong> Ichimlik suvi sifatiga e’tibor kuchayadi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF016</div>
+    <div class="title">Leptospiroz</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Leptospira bakteriyasi</div>
+    <div class="section"><strong>Yechimi:</strong> Antibiotiklar</div>
+    <div class="section"><strong>Foydasi:</strong> Chorvachilik gigiyenasiga urg‘u beriladi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF017</div>
+    <div class="title">Boshcha (enterobioz)</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Parazitar qurtlar</div>
+    <div class="section"><strong>Yechimi:</strong> Antiparazitik dorilar</div>
+    <div class="section"><strong>Foydasi:</strong> Bolalarda gigiyena odatlari shakllanadi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF018</div>
+    <div class="title">Malariya</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Plasmodium paraziti (chivin orqali)</div>
+    <div class="section"><strong>Yechimi:</strong> Antimalaryal dorilar</div>
+    <div class="section"><strong>Foydasi:</strong> Tropik sog‘liqni saqlashga e’tibor kuchayadi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF019</div>
+    <div class="title">Quturish</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Virus (hayvon chaqishi orqali)</div>
+    <div class="section"><strong>Yechimi:</strong> Vaktsina (post-eksponatsiya)</div>
+    <div class="section"><strong>Foydasi:</strong> Hayvonlarga nisbatan ehtiyot choralarini oshiradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF020</div>
+    <div class="title">Chuma (O‘lat)</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Yersinia pestis bakteriyasi</div>
+    <div class="section"><strong>Yechimi:</strong> Antibiotiklar</div>
+    <div class="section"><strong>Foydasi:</strong> Epidemiologiya tarixini o‘rganish imkonini beradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF021</div>
+    <div class="title">Toxoplazmoz</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Toxoplasma gondii (parazit)</div>
+    <div class="section"><strong>Yechimi:</strong> Antiparazitik dori vositalari</div>
+    <div class="section"><strong>Foydasi:</strong> Homiladorlik nazoratini kuchaytiradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF022</div>
+    <div class="title">Qurtli kasalliklar</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Turli ichki parazitlar</div>
+    <div class="section"><strong>Yechimi:</strong> Antigelmintik dorilar</div>
+    <div class="section"><strong>Foydasi:</strong> Parazitologiyani rivojlantiradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF026</div>
+    <div class="title">Norovirus infektsiyasi</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Norovirus (ovqat va suv orqali)</div>
+    <div class="section"><strong>Yechimi:</strong> Rehidrasiya, simptomatik davo</div>
+    <div class="section"><strong>Foydasi:</strong> Oziq-ovqat xavfsizligi muhimligini eslatadi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF027</div>
+    <div class="title">Brutsellyoz</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Brucella bakteriyasi (chorva mahsuloti orqali)</div>
+    <div class="section"><strong>Yechimi:</strong> Antibiotiklar (doksisiklin, rifampitsin)</div>
+    <div class="section"><strong>Foydasi:</strong> Veterinar nazoratini kuchaytiradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF028</div>
+    <div class="title">Qrim-Kongo bezgagi</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Virus (kenelar orqali)</div>
+    <div class="section"><strong>Yechimi:</strong> Simptomatik davo, ba’zan ribavirin</div>
+    <div class="section"><strong>Foydasi:</strong> Vektor nazoratiga urg‘u beradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF029</div>
+    <div class="title">Enterovirus infektsiyasi</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Enteroviruslar (ichak orqali)</div>
+    <div class="section"><strong>Yechimi:</strong> Simptomatik davo</div>
+    <div class="section"><strong>Foydasi:</strong> O‘quvchilar orasida gigiyena darslariga sabab bo‘ladi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF030</div>
+    <div class="title">Lyaym kasalligi</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Ixodes kenesi orqali uzatiladigan Borrelia bakteriyasi</div>
+    <div class="section"><strong>Yechimi:</strong> Antibiotiklar (doksisiklin, amoksitsillin)</div>
+    <div class="section"><strong>Foydasi:</strong> Tabiatda ehtiyotkorlikni oshiradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF031</div>
+    <div class="title">Rotavirus infektsiyasi</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Virus (asosan bolalarda)</div>
+    <div class="section"><strong>Yechimi:</strong> Suv yo‘qotilishini tiklash</div>
+    <div class="section"><strong>Foydasi:</strong> Emizikli bolalarning salomatligiga e’tibor ortadi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF032</div>
+    <div class="title">Helikobakter pilori infektsiyasi</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Helicobacter pylori bakteriyasi</div>
+    <div class="section"><strong>Yechimi:</strong> Antibiotiklar va kislotani kamaytiruvchi dorilar</div>
+    <div class="section"><strong>Foydasi:</strong> Ovqat hazmini nazorat qilishga yordam beradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF033</div>
+    <div class="title">Sitomegalovirus (CMV)</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Herpesviridae oilasi virusi</div>
+    <div class="section"><strong>Yechimi:</strong> Antiviral dorilar (gansiklovir)</div>
+    <div class="section"><strong>Foydasi:</strong> Homiladorlik davrida testlash muhimligini ko‘rsatadi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF034</div>
+    <div class="title">HTLV (insonga tegishli T-lekemiya virusi)</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Retrovirus (qon orqali uzatiladi)</div>
+    <div class="section"><strong>Yechimi:</strong> Antiretrovirus terapiyasi (ART)</div>
+    <div class="section"><strong>Foydasi:</strong> Qon donorlari skriningini kuchaytiradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF035</div>
+    <div class="title">HTV (insonga tegishli Tetiklovchi virus)</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Virus (semptomatik bo‘lmagan holatlar ham mavjud)</div>
+    <div class="section"><strong>Yechimi:</strong> Qon nazorati, monitoring, ART</div>
+    <div class="section"><strong>Foydasi:</strong> Virus tashuvchilik tushunchasini kengaytiradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF036</div>
+    <div class="title">Qalqonsimon bez virusli yallig‘lanish (subakut tireoidit)</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Virus infektsiyasi</div>
+    <div class="section"><strong>Yechimi:</strong> Yallig‘lanishga qarshi dorilar</div>
+    <div class="section"><strong>Foydasi:</strong> Autoimmun tizimni o‘rganishga yordam beradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF037</div>
+    <div class="title">Mononukleoz</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Epstein-Barr virusi</div>
+    <div class="section"><strong>Yechimi:</strong> Dam olish, suyuqlik, simptomatik davo</div>
+    <div class="section"><strong>Foydasi:</strong> O‘pish orqali yuqish ehtimoli haqidagi xabardorlikni oshiradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF038</div>
+    <div class="title">Qizilcha (Rubella)</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Rubella virusi</div>
+    <div class="section"><strong>Yechimi:</strong> Vaksina, simptomatik davo</div>
+    <div class="section"><strong>Foydasi:</strong> Homiladorlikdagi xavflarni kamaytiradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF039</div>
+    <div class="title">Parotit (so‘lak bezining yallig‘lanishi)</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Mumps virus</div>
+    <div class="section"><strong>Yechimi:</strong> Vaksina, simptomatik davo</div>
+    <div class="section"><strong>Foydasi:</strong> Bolalikdagi emlashga e’tibor</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF040</div>
+    <div class="title">Reye sindromi</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Gripp yoki qizamiq bilan bog‘liq (aspirin bilan bog‘liq holatlar)</div>
+    <div class="section"><strong>Yechimi:</strong> Shifoxonada simptomatik nazorat</div>
+    <div class="section"><strong>Foydasi:</strong> Bolalarda aspirin qo‘llanilmasligini ogohlantiradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">INF041</div>
+    <div class="title">Pasterellyoz</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Hayvon tishlashi orqali kiruvchi bakteriya</div>
+    <div class="section"><strong>Yechimi:</strong> Antibiotiklar (penitsillin, doksisiklin)</div>
+
+    <h1>2. Yurak-qon tomir tizimi kasalliklari</h1>
+
+<div class="med-card">
+    <div class="code">CAR001</div>
+    <div class="title">Arterial gipertoniya</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Genetik omillar, stress, tuzli ovqat, kamharakatlik</div>
+    <div class="section"><strong>Yechimi:</strong> Antigipertenziv dorilar, tuz iste’molini kamaytirish, jismoniy faollik</div>
+    <div class="section"><strong>Foydasi:</strong> Sog‘lom turmush tarzini shakllantirishga yordam beradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR002</div>
+    <div class="title">Ishemik yurak kasalligi (IYK)</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Qon tomirlarining torayishi yoki to‘silishi</div>
+    <div class="section"><strong>Yechimi:</strong> Antianginal dorilar, aspirin, angioplastika, yurak by-pass operatsiyasi</div>
+    <div class="section"><strong>Foydasi:</strong> Hayot sifatini nazorat qilish ahamiyatini ko‘rsatadi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR003</div>
+    <div class="title">Insult</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Miya qon aylanishining to‘xtashi yoki qon ketishi</div>
+    <div class="section"><strong>Yechimi:</strong> Trombolitiklar (ertalabki bosqichda), reabilitatsiya, profilaktik terapiya</div>
+    <div class="section"><strong>Foydasi:</strong> Sog‘liqni erta nazorat qilish zaruriyatini o‘rgatadi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR004</div>
+    <div class="title">Yurak yetishmovchiligi</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Yurak mushagining zaiflashuvi, avvalgi yurak xurujlari yoki gipertoniya</div>
+    <div class="section"><strong>Yechimi:</strong> Diuretiklar, ACE-ingibitorlar, beta-blokerlar, yurak transplantatsiyasi</div>
+    <div class="section"><strong>Foydasi:</strong> Hayot sifatini yaxshilash uchun kompleks yondashuv zarurligini tushuntiradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR005</div>
+    <div class="title">Ateroskleroz</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Qon tomir devorlariga xolesterin to‘planishi</div>
+    <div class="section"><strong>Yechimi:</strong> Statinlar, ovqatlanishni nazorat qilish, jismoniy faollik</div>
+    <div class="section"><strong>Foydasi:</strong> Profilaktik parhez madaniyatini shakllantiradi</div>
+  </div>
+
+  <div class="med-card">
+    <div class="code">CAR006</div>
+    <div class="title">Aritmiya</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Elektr signallari buzilishi (stress, irsiyat, kasalliklar)</div>
+    <div class="section"><strong>Yechimi:</strong> Anti-aritmik dorilar, kardioverter-defibrillyator, radiofrekans ablatsiya</div>
+    <div class="section"><strong>Foydasi:</strong> Yurak ritmini muntazam kuzatish odatini shakllantiradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR007</div>
+    <div class="title">Qon bosimi pastligi (gipotoniya)</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Ichki kasalliklar, suvsizlanish, yurak muammolari</div>
+    <div class="section"><strong>Yechimi:</strong> Suv ichish, tuzli ovqat, kerakli holatda dori</div>
+    <div class="section"><strong>Foydasi:</strong> Stressni kamaytirishga yordam berishi mumkin</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR008</div>
+    <div class="title">Tromboz</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Qon ivishining ortishi, harakatsizlik</div>
+    <div class="section"><strong>Yechimi:</strong> Antikoagulyantlar, harakat, vena filtr</div>
+    <div class="section"><strong>Foydasi:</strong> Qon aylanish tizimiga e’tibor ortadi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR009</div>
+    <div class="title">Varikoz</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Qon aylanishida nosozlik, irsiylik, tik turgan holda ishlash</div>
+    <div class="section"><strong>Yechimi:</strong> Kompression paypoq, skleroterapiya, jarrohlik</div>
+    <div class="section"><strong>Foydasi:</strong> Harakatchanlik va vena salomatligi haqida o‘ylashga majbur qiladi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR010</div>
+    <div class="title">Miokard infarkti</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Yurakni oziqlantiruvchi arteriyalar to‘silishi</div>
+    <div class="section"><strong>Yechimi:</strong> Tez yordam, angioplastika, antiplatelet dorilar</div>
+    <div class="section"><strong>Foydasi:</strong> Hayot tarzini tubdan o‘zgartirishga turtki bo‘lishi mumkin</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR011</div>
+    <div class="title">Perikardit</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Virusli infeksiya, otoimmun kasalliklar</div>
+    <div class="section"><strong>Yechimi:</strong> Yallig‘lanishga qarshi dorilar, kolxisin, kortikosteroidlar</div>
+    <div class="section"><strong>Foydasi:</strong> Yurak atrofidagi to‘qimalar holatini nazorat qilishga yordam beradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR012</div>
+    <div class="title">Endokardit</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Bakterial infeksiya yurak klapanlariga ta’siri</div>
+    <div class="section"><strong>Yechimi:</strong> Antibiotik terapiya, og‘ir hollarda jarrohlik</div>
+    <div class="section"><strong>Foydasi:</strong> Og‘iz bo‘shlig‘i gigiyenasining ahamiyati ko‘rsatiladi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR013</div>
+    <div class="title">Aorta anevrizmasi</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Aorta devorining zaiflashuvi</div>
+    <div class="section"><strong>Yechimi:</strong> Kuzatish, jarrohlik orqali protezlashtirish</div>
+    <div class="section"><strong>Foydasi:</strong> Ichki organlarni muntazam kuzatishga turtki bo‘ladi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR014</div>
+    <div class="title">Pulmonar emboliya</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Oyoq venasidagi tromb o‘pkaga o‘tishi</div>
+    <div class="section"><strong>Yechimi:</strong> Antikoagulyantlar, kislorod terapiyasi</div>
+    <div class="section"><strong>Foydasi:</strong> Parvoz yoki uzoq safarda ogohlantirishga xizmat qiladi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR015</div>
+    <div class="title">Tachikardiya</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Stress, yurak kasalliklari, kofein, gormonlar</div>
+    <div class="section"><strong>Yechimi:</strong> Beta-blokerlar, stressni kamaytirish, yurak monitoringi</div>
+    <div class="section"><strong>Foydasi:</strong> Ichki tinchlik va tinchlantiruvchi amaliyotlarga e’tibor</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR016</div>
+    <div class="title">Bradikardiya</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Yurak ritmining sekinligi, yurak tug‘ma defekti</div>
+    <div class="section"><strong>Yechimi:</strong> Yurak stimulyatori (peysmeyker), kuzatuv</div>
+    <div class="section"><strong>Foydasi:</strong> Yurak ritmini muntazam tekshirishga undaydi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR017</div>
+    <div class="title">Metabolik sindrom</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Qandli diabet, semizlik, yuqori xolesterin</div>
+    <div class="section"><strong>Yechimi:</strong> Parhez, jismoniy faollik, gipotenziv va gipoqlikemik dorilar</div>
+    <div class="section"><strong>Foydasi:</strong> Yashash uslubini o‘zgartirish zaruratini anglatadi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR018</div>
+    <div class="title">Mitral stenoz</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Yurak klapanlarining torayishi</div>
+    <div class="section"><strong>Yechimi:</strong> Klapan almashtirish, balon valvuloplastika</div>
+    <div class="section"><strong>Foydasi:</strong> Yurak klapanlarining ahamiyatini o‘rgatadi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR019</div>
+    <div class="title">Aortik regurgitatsiya</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> Klapan to‘liq yopilmaydi, qon orqaga oqadi</div>
+    <div class="section"><strong>Yechimi:</strong> Kuzatish, dori terapiyasi, klapan almashtirish</div>
+    <div class="section"><strong>Foydasi:</strong> Yurak muvozanatini anglashga yordam beradi</div>
+  </div>
+  
+  <div class="med-card">
+    <div class="code">CAR020</div>
+    <div class="title">Pulmonar gipertoniya</div>
+    <div class="section"><strong>Kelib chiqishi:</strong> O‘pka arteriyasidagi bosimning oshishi</div>
+
+    <div class="med-card">
+        <div class="code">CAR001</div>
+        <div class="title">Arterial gipertoniya</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Genetik omillar, stress</div>
+        <div class="section"><strong>Yechimi:</strong> Antigipertenziv dorilar, tuzni kamaytirish, jismoniy faollik</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR002</div>
+        <div class="title">Ishemik yurak kasalligi</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Arteriyalarning torayishi</div>
+        <div class="section"><strong>Yechimi:</strong> Antianginal dorilar, aspirin, angioplastika</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR003</div>
+        <div class="title">Miokard infarkti</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Yurak mushagiga qon yetmasligi</div>
+        <div class="section"><strong>Yechimi:</strong> Trombolitiklar, yurak kateterizatsiyasi, reabilitatsiya</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR004</div>
+        <div class="title">Yurak yetishmovchiligi</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Yurakning zaif pompalanishi</div>
+        <div class="section"><strong>Yechimi:</strong> Diuretiklar, ACE-ingibitorlar, yurak transplantatsiyasi</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR005</div>
+        <div class="title">Aritmiya</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Elektr impulslarining buzilishi</div>
+        <div class="section"><strong>Yechimi:</strong> Beta-blokerlar, kardioverter, ablatsiya</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR006</div>
+        <div class="title">Bradikardiya</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Yurak urishining sekinlashuvi</div>
+        <div class="section"><strong>Yechimi:</strong> Yurak stimulyatori (peysmeyker)</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR007</div>
+        <div class="title">Tachikardiya</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Yurak urishining tezlashuvi</div>
+        <div class="section"><strong>Yechimi:</strong> Beta-blokerlar, stress nazorati, ablatsiya</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR008</div>
+        <div class="title">Insult</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Miya qon aylanishining buzilishi</div>
+        <div class="section"><strong>Yechimi:</strong> Trombolitiklar (darhol), reabilitatsiya, aspirinni doimiy qabul qilish</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR009</div>
+        <div class="title">Ateroskleroz</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Arteriyalarda xolesterin to‘planishi</div>
+        <div class="section"><strong>Yechimi:</strong> Statinlar, parhez, jismoniy faollik</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR010</div>
+        <div class="title">Gipotoniya</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Qon bosimining pastligi</div>
+        <div class="section"><strong>Yechimi:</strong> Suv ichish, tuzli ovqat, holatga qarab dorilar</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR011</div>
+        <div class="title">Tromboz</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Qon ivishi va tomir to‘silishi</div>
+        <div class="section"><strong>Yechimi:</strong> Antikoagulyantlar, aspirin, vena filtr</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR012</div>
+        <div class="title">Pulmonar emboliya</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> O‘pkadagi tomirning to‘silishi</div>
+        <div class="section"><strong>Yechimi:</strong> Antikoagulyantlar, kislorod terapiyasi, o‘tkir hollarda trombolitiklar</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR013</div>
+        <div class="title">Varikoz</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Vena klapanlarining zaifligi</div>
+        <div class="section"><strong>Yechimi:</strong> Kompression paypoqlar, skleroterapiya, venalar jarrohligi</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR014</div>
+        <div class="title">Endokardit</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Yurak klapanlarining bakterial infeksiyasi</div>
+        <div class="section"><strong>Yechimi:</strong> Antibiotiklar (Uzoq muddat), og‘ir holatda klapan almashtirish</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR015</div>
+        <div class="title">Miokardit</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Yurak mushagining yallig‘lanishi (virusli yoki autoimmun)</div>
+        <div class="section"><strong>Yechimi:</strong> Yotoq rejimi, yallig‘lanishga qarshi dorilar, yurakni himoyalovchi preparatlar</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR016</div>
+        <div class="title">Perikardit</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Yurak atrofidagi pardaning yallig‘lanishi</div>
+        <div class="section"><strong>Yechimi:</strong> NSAIDlar, kolxisin, kortikosteroidlar (zaruratda)</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR017</div>
+        <div class="title">Aorta anevrizmasi</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Aorta devorining kengayishi yoki yorilishi</div>
+        <div class="section"><strong>Yechimi:</strong> Kattaligi va joylashuviga qarab – jarrohlik, angiografiya</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR018</div>
+        <div class="title">Reyno sindromi</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Sovuqqa sezuvchanlik (arteriyalar siqilishi)</div>
+        <div class="section"><strong>Yechimi:</strong> Isitish, kaltsiy kanal blokatorlari, stress nazorati</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR019</div>
+        <div class="title">Mitral stenoz</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Mitral klapan torayishi, asosan revmatik kasallik natijasida</div>
+        <div class="section"><strong>Yechimi:</strong> Valvuloplastika yoki yurak klapanini almashtirish</div>
+      </div>
+      
+      <div class="med-card">
+        <div class="code">CAR020</div>
+        <div class="title">Aortik regurgitatsiya</div>
+        <div class="section"><strong>Kelib chiqishi:</strong> Aortik klapan yopilmasligi natijasida qon orqaga oqishi</div>
+        <div class="section"><strong>Yechimi:</strong> Kuzatish, yurak jarrohligi (klapan)
+  
+            <h1>3.Onqologik kasalliklar (saraton turlari)</h1>
+
+            <div class="med-card">
+                <div class="code">ONC001</div>
+                <div class="title">O‘pka saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Chekish, iflos havo, irsiyat</div>
+                <div class="section"><strong>Yechimi:</strong> Kimyoterapiya, nurlantirish (radioterapiya), jarrohlik</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC002</div>
+                <div class="title">Ko‘krak bezi saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Genetik omillar (BRCA1/2), gormonal nomutanosiblik</div>
+                <div class="section"><strong>Yechimi:</strong> Mastektomiya, kimyo- va gormonterapiya, immunoterapiya</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC003</div>
+                <div class="title">Prostata saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Keksalik, erkak gormonlari, irsiyat</div>
+                <div class="section"><strong>Yechimi:</strong> Kuzatuv, nurlantirish, jarrohlik, gormonterapiya</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC004</div>
+                <div class="title">Yo‘g‘on ichak saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Yallig‘lanishli ichak kasalliklari, noto‘g‘ri ovqatlanish</div>
+                <div class="section"><strong>Yechimi:</strong> Kolonektomiya, kimyoterapiya, parhez bilan nazorat</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC005</div>
+                <div class="title">Bachadon bo‘yni saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> HPV virusi, erta jinsiy aloqa, emlanmaslik</div>
+                <div class="section"><strong>Yechimi:</strong> Nurlantirish, jarrohlik, HPVga qarshi emlash (profilaktika)</div>
+              </div>
+
+              <div class="med-card">
+                <div class="code">ONC001</div>
+                <div class="title">O‘pka saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Chekish, iflos havo, irsiyat</div>
+                <div class="section"><strong>Yechimi:</strong> Kimyoterapiya, nurlantirish, jarrohlik</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC002</div>
+                <div class="title">Ko‘krak bezi saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> BRCA1/2 genetik mutatsiyasi, gormonal omillar</div>
+                <div class="section"><strong>Yechimi:</strong> Mastektomiya, kimyoterapiya, gormonterapiya</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC003</div>
+                <div class="title">Prostata saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Keksalik, testosteron balandligi, irsiyat</div>
+                <div class="section"><strong>Yechimi:</strong> Kuzatuv, radioterapiya, gormonterapiya</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC004</div>
+                <div class="title">Yo‘g‘on ichak saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Poliplar, nosog‘lom parhez</div>
+                <div class="section"><strong>Yechimi:</strong> Jarrohlik, kimyoterapiya, kolonoskopik tekshiruv</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC005</div>
+                <div class="title">Bachadon bo‘yni saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> HPV virusi, emlanmaslik</div>
+                <div class="section"><strong>Yechimi:</strong> Nurlantirish, jarrohlik, gormonterapiya</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC006</div>
+                <div class="title">Melanoma (teri saratoni)</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Quyosh nuri, oq teri, irsiyat</div>
+                <div class="section"><strong>Yechimi:</strong> Eksizional jarrohlik, immunoterapiya</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC007</div>
+                <div class="title">Oshqozon saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Helicobacter pylori, tuzli va dudlangan ovqatlar</div>
+                <div class="section"><strong>Yechimi:</strong> Gastrektomiya, kimyoterapiya</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC008</div>
+                <div class="title">Jigar saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Gepatitlar, siroz, spirtli ichimliklar</div>
+                <div class="section"><strong>Yechimi:</strong> Transplantatsiya, embolizatsiya, jarrohlik</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC009</div>
+                <div class="title">Limfoma</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Immun muvozanatsizligi, viruslar</div>
+                <div class="section"><strong>Yechimi:</strong> Kimyoterapiya, immunoterapiya</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC010</div>
+                <div class="title">Tuxumdon saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Genetik, gormonal omillar</div>
+                <div class="section"><strong>Yechimi:</strong> Ooforektomiya, kimyo- va gormonterapiya</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC011</div>
+                <div class="title">Qalqonsimon bez saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Radiatsiya ta’siri, yod yetishmasligi</div>
+                <div class="section"><strong>Yechimi:</strong> Tiroidektomiya, yod-131 terapiya</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC012</div>
+                <div class="title">Pankreatik saraton</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Diabet, pankreatit, chekish</div>
+                <div class="section"><strong>Yechimi:</strong> Whipple operatsiyasi, kimyoterapiya</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC013</div>
+                <div class="title">Siydik pufagi saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Kimyoviy moddalarga ta’sir, chekish</div>
+                <div class="section"><strong>Yechimi:</strong> BCG immunoterapiya, sistektomiya</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC014</div>
+                <div class="title">Suyak saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Genetik mutatsiyalar, yallig‘lanish</div>
+                <div class="section"><strong>Yechimi:</strong> Amputatsiya, nurlantirish, kimyoterapiya</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC015</div>
+                <div class="title">Leikemiya (oq qon)</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> DNK mutatsiyalari, radiatsiya</div>
+                <div class="section"><strong>Yechimi:</strong> Kimyoterapiya, suyak iligi transplantatsiyasi</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC016</div>
+                <div class="title">Til saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Chekish, spirtli ichimlik, HPV</div>
+                <div class="section"><strong>Yechimi:</strong> Jarrohlik, nurlantirish, logopedik tiklash</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC017</div>
+                <div class="title">Qizilo‘ngach saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> GERD, issiq ovqat, spirtli ichimliklar</div>
+                <div class="section"><strong>Yechimi:</strong> Esofagektomiya, kimyo-nurlantirish</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC018</div>
+                <div class="title">Buyrak saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Sigaret, irsiyat, gipertoniya</div>
+                <div class="section"><strong>Yechimi:</strong> Nefrektomiya, immunoterapiya</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC019</div>
+                <div class="title">Bosh miya saratoni</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Genetik, ionlashtiruvchi nurlanish</div>
+                <div class="section"><strong>Yechimi:</strong> Kraniotomiya, nurlantirish, steroid terapiya</div>
+              </div>
+              
+              <div class="med-card">
+                <div class="code">ONC020</div>
+                <div class="title">Laringial (tomoq) saraton</div>
+                <div class="section"><strong>Kelib chiqishi:</strong> Chekish, ichimliklar, HPV</div>
+                
+                <div class="med-card">
+                    <div class="code">ONC021</div>
+                    <div class="title">Endometriya saratoni</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Gormonal nomutanosiblik, menopauza</div>
+                    <div class="section"><strong>Yechimi:</strong> Jarrohlik, gormonterapiya, nurlantirish</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">ONC022</div>
+                    <div class="title">Orqa ichak saratoni</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Poliplar, noto‘g‘ri ovqatlanish</div>
+                    <div class="section"><strong>Yechimi:</strong> Rektal rezeksiyalar, kimyoterapiya</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">ONC023</div>
+                    <div class="title">Ko‘z melanomasi</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> UV nurlari, irsiyat</div>
+                    <div class="section"><strong>Yechimi:</strong> Radiatsiya, enukleatsiya</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">ONC024</div>
+                    <div class="title">Ter bezlari saratoni</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Genetik mutatsiyalar, nisbatan kam uchraydi</div>
+                    <div class="section"><strong>Yechimi:</strong> Jarrohlik, nurlantirish</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">ONC025</div>
+                    <div class="title">Multipl mieloma</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Plazma hujayralarning nazoratsiz ko‘payishi</div>
+                    <div class="section"><strong>Yechimi:</strong> Kimyoterapiya, suyak iligi transplantatsiyasi</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">ONC026</div>
+                    <div class="title">Nasal karsinoma (burun bo‘shlig‘i saratoni)</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Virus (EBV), iflos havoga ta’sir</div>
+                    <div class="section"><strong>Yechimi:</strong> Radiatsiya va kimyoterapiya</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">ONC027</div>
+                    <div class="title">Tuxumdonning gormonal aktiv o‘smalari</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Gormonal disbalans, irsiyat</div>
+                    <div class="section"><strong>Yechimi:</strong> Jarrohlik, gormon blokerlari</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">ONC028</div>
+                    <div class="title">O‘rta quloq saratoni</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Kronik yallig‘lanish, radiatsiya</div>
+                    <div class="section"><strong>Yechimi:</strong> Jarrohlik, radioterapiya</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">ONC029</div>
+                    <div class="title">Sarcoma (yumshoq to‘qimalar)</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Genetik, nurlanish, kimyoviy moddalar</div>
+                    <div class="section"><strong>Yechimi:</strong> Amputatsiya, radiatsiya, kimyoterapiya</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">ONC030</div>
+                    <div class="title">Gipofiz bezining adenokarsinomasi</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Gormon ishlab chiqarishdagi disbalans</div>
+                    <div class="section"><strong>Yechimi:</strong> Endoskopik jarrohlik, nurlantirish, gormonterapiya</div>
+                  </div>
+
+                  <div class="med-card">
+                    <div class="code">NEU001</div>
+                    <div class="title">Depressiya</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Stress, irsiyat, miyadagi serotonin yetishmovchiligi</div>
+                    <div class="section"><strong>Yechimi:</strong> Antidepressant dorilar, psixoterapiya, ijtimoiy qo‘llab-quvvatlash</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU002</div>
+                    <div class="title">Shizofreniya</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Genetik moyillik, dopamin disbalansi</div>
+                    <div class="section"><strong>Yechimi:</strong> Antipsixotiklar, psixologik terapiyalar, yaqinlar bilan aloqa</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU003</div>
+                    <div class="title">Altsgeymer kasalligi</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Neyron hujayralarining asta-sekin o‘lashi, irsiyat</div>
+                    <div class="section"><strong>Yechimi:</strong> Xotirani qo‘llab-quvvatlovchi dori vositalar, kognitiv terapiya, parvarish</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU004</div>
+                    <div class="title">Parkinson kasalligi</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Dopamin ishlab chiqaruvchi hujayralarning degeneratsiyasi</div>
+                    <div class="section"><strong>Yechimi:</strong> Levodopa preparatlari, jismoniy mashqlar, neyrostimulyatsiya</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU005</div>
+                    <div class="title">Bipolyar buzulish</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Genetik omillar, neyrokimyoviy o‘zgarishlar</div>
+                    <div class="section"><strong>Yechimi:</strong> Stabilizator dori (litiy), psixoterapiya</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU006</div>
+                    <div class="title">Epilepsiya</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Miya faoliyatidagi elektr impulslarning buzilishi</div>
+                    <div class="section"><strong>Yechimi:</strong> Antikonvulsantlar, ba’zida jarrohlik, EEG nazorati</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU007</div>
+                    <div class="title">Obsessiv-kompulsiv buzilish (OKB)</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Miyada serotonin disbalansi, xavotir</div>
+                    <div class="section"><strong>Yechimi:</strong> Kognitiv xulq-terapiya (KXT), SSRI antidepressantlar</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU008</div>
+                    <div class="title">Travmadan keyingi stress buzilishi (TKSB)</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Og‘ir psixologik zarba (urush, falokat, zo‘ravonlik)</div>
+                    <div class="section"><strong>Yechimi:</strong> EMDR terapiya, psixoterapiya, tinchlantiruvchi dorilar</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU009</div>
+                    <div class="title">Autizm spektr buzilishi</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Genetik va nevrologik rivojlanishdagi o‘zgarishlar</div>
+                    <div class="section"><strong>Yechimi:</strong> Nutq terapiyasi, tuzilgan ta’lim, ijtimoiy moslashuv mashg‘ulotlari</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU010</div>
+                    <div class="title">Diqqat va faoliyat yetishmovchiligi sindromi (DYYY)</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Miya faoliyatidagi dopamin va norepinefrin tanqisligi</div>
+                    <div class="section"><strong>Yechimi:</strong> Stimulyator dorilar (metilfenidat), xulq-terapiya, ta’lim yondashuvi</div>
+                  </div>
+
+                  <div class="med-card">
+                    <div class="code">NEU001</div>
+                    <div class="title">Depressiya</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Stress, serotonin yetishmovchiligi, ijtimoiy omillar</div>
+                    <div class="section"><strong>Yechimi:</strong> Antidepressantlar, psixoterapiya, jismoniy faollik</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU002</div>
+                    <div class="title">Shizofreniya</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Genetik moyillik, dopamin muvozanatsizligi</div>
+                    <div class="section"><strong>Yechimi:</strong> Antipsixotik dorilar, psixologik qo‘llab-quvvatlash</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU003</div>
+                    <div class="title">Altsgeymer kasalligi</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Neyronlar degeneratsiyasi, yosh bilan bog‘liq</div>
+                    <div class="section"><strong>Yechimi:</strong> Kognitiv terapiya, dori bilan sekinlashtirish, parvarish</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU004</div>
+                    <div class="title">Parkinson kasalligi</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Dopamin ishlab chiqaruvchi hujayralarning nobud bo‘lishi</div>
+                    <div class="section"><strong>Yechimi:</strong> Levodopa, jismoniy terapiya, neyrostimulyatsiya</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU005</div>
+                    <div class="title">Bipolyar buzilish</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Genetik va kimyoviy omillar</div>
+                    <div class="section"><strong>Yechimi:</strong> Mood stabilizatorlar, psixoterapiya</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU006</div>
+                    <div class="title">Epilepsiya</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Miyada elektr faolligi o‘zgarishi</div>
+                    <div class="section"><strong>Yechimi:</strong> Antikonvulsantlar, EEG monitoring, jarrohlik (ba’zida)</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU007</div>
+                    <div class="title">Obsessiv-kompulsiv buzilish</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Miyada serotonin tizimi buzilishi</div>
+                    <div class="section"><strong>Yechimi:</strong> Kognitiv xulq-terapiya, SSRI antidepressantlar</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU008</div>
+                    <div class="title">Travmadan keyingi stress buzilishi</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Og‘ir travma yoki shokli holat</div>
+                    <div class="section"><strong>Yechimi:</strong> EMDR terapiya, psixoterapiya, tinchlantiruvchi dorilar</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU009</div>
+                    <div class="title">Autizm spektr buzilishi</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Irsi va nevrologik rivojlanishdagi farqlar</div>
+                    <div class="section"><strong>Yechimi:</strong> Nutq va ijtimoiy terapiya, individual ta’lim</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU010</div>
+                    <div class="title">DYYY sindromi</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Diqqat va faoliyatni boshqaruvchi neyrotransmitterlar disbalansi</div>
+                    <div class="section"><strong>Yechimi:</strong> Stimulyatorlar (Ritalin), xulq-terapiya</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU011</div>
+                    <div class="title">Miya insulti</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Qon aylanishining to‘xtashi yoki qon quyilishi</div>
+                    <div class="section"><strong>Yechimi:</strong> Trombolitiklar, reabilitatsiya, profilaktika</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU012</div>
+                    <div class="title">Migren</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Genetik moyillik, migrenni qo‘zg‘atuvchi omillar</div>
+                    <div class="section"><strong>Yechimi:</strong> Triptanlar, stressni kamaytirish, profilaktik dorilar</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU013</div>
+                    <div class="title">Tiki buzilishlari (Tourette sindromi)</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Miya bazal yadrolarining faoliyati bilan bog‘liq</div>
+                    <div class="section"><strong>Yechimi:</strong> Behavioral terapiya, antipsixotiklar</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU014</div>
+                    <div class="title">Xavotirli buzilish</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Miyada norepinefrin/serotonin muvozanatsizligi</div>
+                    <div class="section"><strong>Yechimi:</strong> SSRI, CBT, nafas va yengillik mashqlari</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU015</div>
+                    <div class="title">Miya shikastlanishi</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Travma, falokat, sport jarohati</div>
+                    <div class="section"><strong>Yechimi:</strong> Neyroreabilitatsiya, fizioterapiya, logopedik yordam</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU016</div>
+                    <div class="title">Demensiya</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Neyronlar degeneratsiyasi, Altsgeymer</div>
+                    <div class="section"><strong>Yechimi:</strong> Xotirani qo‘llab-quvvatlovchi dorilar, kundalik trening</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU017</div>
+                    <div class="title">Nevralgiya</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Asab yallig‘lanishi yoki ezilishi</div>
+                    <div class="section"><strong>Yechimi:</strong> Og‘riq qoldiruvchi dorilar, nerv blokatori, fizioterapiya</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU018</div>
+                    <div class="title">Multiple skleroz</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Autoimmun hujumlar, nerv tolalari zararlanishi</div>
+                    <div class="section"><strong>Yechimi:</strong> Immunomodulyatorlar, simptomatik davo</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU019</div>
+                    <div class="title">Panik hujum sindromi</div>
+                    <div class="section"><strong>Kelib chiqishi:</strong> Gormonal va neyrokimyoviy disbalans</div>
+                    <div class="section"><strong>Yechimi:</strong> CBT, nafas nazorati, tinchlantiruvchi preparatlar</div>
+                  </div>
+                  
+                  <div class="med-card">
+                    <div class="code">NEU020</div>
+                    <div class="title">Deluziyalar</div>
+
+                    <div class="med-card">
+                        <div class="code">NEU026</div>
+                        <div class="title">Histerik buzilish</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Travmatik tajribalar, psixologik siqilish</div>
+                        <div class="section"><strong>Yechimi:</strong> Psixoterapiya, ongni anglash amaliyoti, ijtimoiy yordam</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU027</div>
+                        <div class="title">Nevroz</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Xavotir, salbiy hayot tajribalari</div>
+                        <div class="section"><strong>Yechimi:</strong> Psixoterapiya, tinchlantiruvchi vositalar</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU028</div>
+                        <div class="title">Fonobobiya</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Xususan tovushga sezuvchanlik va ruhiy assotsiatsiyalar</div>
+                        <div class="section"><strong>Yechimi:</strong> Kognitiv terapiya, ekspozitsion mashqlar</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU029</div>
+                        <div class="title">Afaziya</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Miya shikastlanishi, insult</div>
+                        <div class="section"><strong>Yechimi:</strong> Nutq terapiyasi, reabilitatsiya, ergoterapiya</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU030</div>
+                        <div class="title">Disleksiya</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Miya rivojlanishidagi nevrologik o‘zgarishlar</div>
+                        <div class="section"><strong>Yechimi:</strong> Maxsus o‘qituv metodlari, multisensor yondashuv</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU031</div>
+                        <div class="title">Apatiya sindromi</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Depressiyaga yaqin kayfiyatlar, frontal lob disfunksiyasi</div>
+                        <div class="section"><strong>Yechimi:</strong> Rag‘batlantiruvchi faoliyatlar, antidepressantlar, motivatsion terapiya</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU032</div>
+                        <div class="title">Vegetativ distoniya</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Avtonom asab tizimining tartibsizligi</div>
+                        <div class="section"><strong>Yechimi:</strong> Tinchtiruvchi vositalar, nafas mashqlari, fizioterapiya</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU033</div>
+                        <div class="title">Somatoform buzilish</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Stress natijasida tana simptomlari paydo bo‘lishi</div>
+                        <div class="section"><strong>Yechimi:</strong> Psixoterapiya, meditatsiya, stressni kamaytirish</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU034</div>
+                        <div class="title">Katatoniya sindromi</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Shizofreniya va boshqa psixotik kasalliklarda kuzatiladi</div>
+                        <div class="section"><strong>Yechimi:</strong> Benzodiazepinlar, EKT (elektrokonvulsiv terapiya)</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU035</div>
+                        <div class="title">Manik epizod</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Bipolyar buzilishdagi o‘ta faollik fazasi</div>
+                        <div class="section"><strong>Yechimi:</strong> Stabilizator dorilar, uyqu tartibini sozlash</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU036</div>
+                        <div class="title">Fobiyalar</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Salbiy tajriba yoki giperhissiy reaksiya</div>
+                        <div class="section"><strong>Yechimi:</strong> Ekspozitsion terapiya, kognitiv yondashuv, SSRI</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU037</div>
+                        <div class="title">Yig‘loqi sindrom (Pseudobulbar affect)</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Miya shikastlanishlari, insult, ALS</div>
+                        <div class="section"><strong>Yechimi:</strong> Antidepressantlar, Dextromethorphan/Quinidine terapiyasi</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU038</div>
+                        <div class="title">Oshqozon-ruxiy sindrom (Psixosomatik gastrit)</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Ruhiy stress, xavotir</div>
+                        <div class="section"><strong>Yechimi:</strong> Stressni boshqarish, ichki tinchlik, gastroenterologik davo</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU039</div>
+                        <div class="title">Agrafiya</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Miya shikastlanishi, insult, Altsgeymer</div>
+                        <div class="section"><strong>Yechimi:</strong> Reabilitatsion mashqlar, logopedik yondashuv</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU040</div>
+                        <div class="title">Anoreksiya nervoza</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Ruhiy bosim, ideal tanani tasavvur qilishdagi buzilish</div>
+                        <div class="section"><strong>Yechimi:</strong> Psixoterapiya, ovqatlanish bo‘yicha qo‘llab-quvvatlov, jamoaviy davolash</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU041</div>
+                        <div class="title">Somnambulizm (uyquda yurish)</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Uyqu siklining buzilishi, irsiyat</div>
+                        <div class="section"><strong>Yechimi:</strong> Uyqu gigiyenasi, xavfsizlik choralar, ba’zida benzodiazepinlar</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU042</div>
+                        <div class="title">Halusinatsiyalar</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Psixotik kasalliklar, moddalar ta’siri, uyqusizlik</div>
+                        <div class="section"><strong>Yechimi:</strong> Antipsixotik davo, xavfsizlik, muhitni boshqarish</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU043</div>
+                        <div class="title">Aksiya-indiferentlik sindromi</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Altsgeymer va boshqa demensiya shakllari</div>
+                        <div class="section"><strong>Yechimi:</strong> Fikrlashni faollashtirish, xotira terapiyasi</div>
+                      </div>
+                      
+                      <div class="med-card">
+                        <div class="code">NEU044</div>
+                        <div class="title">Deliriya</div>
+                        <div class="section"><strong>Kelib chiqishi:</strong> Infeksiya, dori ta’siri, surunkali kasalliklar</div>
+
+                       
+                       <h1>Endokrin tizimi kasalliklari</h1>
+                       
+                       
+                        <div class="med-card">
+                            <div class="code">END001</div>
+                            <div class="title">Qandli diabet (2-tip)</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Insulin qarshiligi, semizlik, irsiyat</div>
+                            <div class="section"><strong>Yechimi:</strong> Parhez, jismoniy faollik, metformin, insulinterapiya</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END002</div>
+                            <div class="title">Qandli diabet (1-tip)</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Autoimmun hujumlar, insulin ishlab chiqarilmasligi</div>
+                            <div class="section"><strong>Yechimi:</strong> Doimiy insulin in’yeksiyalari, parhez, nazorat</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END003</div>
+                            <div class="title">Gipotiroidizm</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Qalqonsimon bez faoliyatining pasayishi</div>
+                            <div class="section"><strong>Yechimi:</strong> Levotiroksin gormon terapiyasi</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END004</div>
+                            <div class="title">Gipertiroidizm</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Qalqonsimon bezning ortiqcha gormon ajratishi (masalan, Grev kasalligi)</div>
+                            <div class="section"><strong>Yechimi:</strong> Antitiroid dorilar, radioaktiv yod, ba’zan jarrohlik</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END005</div>
+                            <div class="title">Addison kasalligi</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Buyrak usti bezlarining yetishmovchiligi</div>
+                            <div class="section"><strong>Yechimi:</strong> Gormon almashtiruvchi terapiya (kortizol, aldosteron)</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END006</div>
+                            <div class="title">Kushing sindromi</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Kortizolning ortiqcha ishlab chiqarilishi</div>
+                            <div class="section"><strong>Yechimi:</strong> Kortikosteroidni kamaytirish, buyrak usti bezining jarrohlik yo‘li bilan olib tashlanishi</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END007</div>
+                            <div class="title">Akromegaliya</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Gipofiz bezidan ortiqcha o‘sish gormoni ajralishi</div>
+                            <div class="section"><strong>Yechimi:</strong> O‘smalarni olib tashlash (jarrohlik), somatostatin analoglari</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END008</div>
+                            <div class="title">Gigantizm</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> G‘ayritabiiy darajada o‘sish gormoni (yoshligida)</div>
+                            <div class="section"><strong>Yechimi:</strong> Gormon miqdorini nazorat qilish, jarrohlik yoki radiatsion muolajalar</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END009</div>
+                            <div class="title">Polikistik tuxumdon sindromi (PCOS)</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Gormonal nomutanosiblik, insulin qarshiligi</div>
+                            <div class="section"><strong>Yechimi:</strong> Parhez, antigonadotropinlar, metformin</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END010</div>
+                            <div class="title">Hashimoto tireoiditi</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Autoimmun hujumlar natijasida qalqonsimon bezning so‘nishi</div>
+                            <div class="section"><strong>Yechimi:</strong> Gormon terapiyasi (levotiroksin), doimiy nazorat</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END011</div>
+                            <div class="title">Feoxromositoma</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Buyrak usti bezidagi o‘smalar (adrenalin ortiqcha ishlab chiqariladi)</div>
+                            <div class="section"><strong>Yechimi:</strong> Jarrohlik (adrenalektomiya), alfablokerlar</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END012</div>
+                            <div class="title">Diabetik neyropatiya</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Yillar davomida nazorat qilinmagan diabet</div>
+                            <div class="section"><strong>Yechimi:</strong> Qand nazoratini yaxshilash, og‘riqni yengillashtiruvchi davo</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END013</div>
+                            <div class="title">Osteoporoz</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Estrogenning kamayishi, kalsiy yetishmasligi, gormonal nomutanosiblik</div>
+                            <div class="section"><strong>Yechimi:</strong> Kalsiy va D vitamini qabul qilish, bifosfonatlar, gormon terapiyasi</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END014</div>
+                            <div class="title">Giperkalsemiya</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Paratireoid bezining faoliyati ortishi</div>
+                            <div class="section"><strong>Yechimi:</strong> Suv ichishni ko‘paytirish, kalsitonin, jarrohlik</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END015</div>
+                            <div class="title">Diabetik ketoatsidoz</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Insulinning yetishmovchiligi, glyukoza yo‘qolib ketishi</div>
+                            <div class="section"><strong>Yechimi:</strong> Tez yordam, insulin, suyuqlik va elektrolit muvozanatini tiklash</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END016</div>
+                            <div class="title">Hipoparatiroidizm</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Paratireoid bezining kam faoliyati yoki olib tashlanishi</div>
+                            <div class="section"><strong>Yechimi:</strong> Kalsiy va D vitamini qo‘shimchalari, monitoring</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END017</div>
+                            <div class="title">Gipopituitarizm</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Gipofiz bezining yetarlicha gormon ishlab chiqarmasligi</div>
+                            <div class="section"><strong>Yechimi:</strong> Gormon almashtiruvchi terapiya (TSH, GH, ACTH)</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END018</div>
+                            <div class="title">Testosteron tanqisligi</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Endokrin yetishmovchiligi, qarish, shikastlar</div>
+                            <div class="section"><strong>Yechimi:</strong> Testosteron terapiyasi (in’eksiya, jel, tabletkalar)</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END019</div>
+                            <div class="title">Giperprolaktinemiya</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Prolaktin ishlab chiqaruvchi adenomalar, dori ta’siri</div>
+                            <div class="section"><strong>Yechimi:</strong> Dopamin agonistlari (kabergolin, bromkriptin)</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END020</div>
+                            <div class="title">Jinsiy gormonal disbalans (erkaklarda)</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Testosteron pastligi, stress, semizlik</div>
+                            <div class="section"><strong>Yechimi:</strong> Testosteron terapiyasi, parhez, sog‘lom turmush tarzi</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END021</div>
+                            <div class="title">Premenstrual sindrom (PMS)</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Gormonal silkinishlar, individual sezuvchanlik</div>
+                            <div class="section"><strong>Yechimi:</strong> Gormonal kontraseptivlar, tinchlantiruvchi dorilar</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END022</div>
+                            <div class="title">Gipoglikemiya</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Qandning haddan tashqari pasayishi (insulin ko‘pligi)</div>
+                            <div class="section"><strong>Yechimi:</strong> Glyukoza darhol qabul qilish, insulin dozasini sozlash</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END023</div>
+                            <div class="title">Menopauza bilan bog‘liq o‘zgarishlar</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Estrogen va progesteron darajasining pasayishi</div>
+                            <div class="section"><strong>Yechimi:</strong> Gormon almashtiruvchi terapiya (HRT), fitoterapiya</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END024</div>
+                            <div class="title">Ginekomastiya</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Estrogen/testosteron nisbatining buzilishi</div>
+                            <div class="section"><strong>Yechimi:</strong> Gormonal muvozanatni tiklash, jarrohlik (zaruratda)</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END025</div>
+                            <div class="title">Pubertatning kechikishi</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Gormonlar ishlab chiqarishdagi buzilishlar</div>
+                            <div class="section"><strong>Yechimi:</strong> Gormon terapiyasi (LH, FSH, testosteron/estrogen)</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END026</div>
+                            <div class="title">Yod yetishmovchiligi (endemik buqoq)</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Yod tanqisligi natijasida qalqonsimon bez kattalashuvi</div>
+                            <div class="section"><strong>Yechimi:</strong> Yod bilan boyitilgan tuz, levotiroksin</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END027</div>
+                            <div class="title">Kortikosteroidga bog‘liq sindrom</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Uzoq muddatli gormonal dori iste’moli</div>
+                            <div class="section"><strong>Yechimi:</strong> Dozani asta-sekin kamaytirish, dori almashtirish</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END028</div>
+                            <div class="title">Androgen yetishmovchiligi (ayollarda)</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Gormonal disbalans yoki menopauza</div>
+                            <div class="section"><strong>Yechimi:</strong> Gormon terapiyasi (DHEA), afrodizyak dori vositalar</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END029</div>
+                            <div class="title">Galaktoreya</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Prolaktin ortiqligi (odatda o‘smalar yoki dorilar)</div>
+                            <div class="section"><strong>Yechimi:</strong> Dopamin agonistlari (kabergolin), sabablarga qarab terapiya</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END030</div>
+                            <div class="title">Suyak o‘sishini sekinlashtiruvchi sindrom</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Gormonal yetishmovchilik (GH, IGF-1 pastligi)</div>
+                            <div class="section"><strong>Yechimi:</strong> Somatotropin in’yeksiyalari, endokrinologik kuzatuv</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END031</div>
+                            <div class="title">Progeriya (Hutchinson-Gilford)</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> LMNA genidagi mutatsiya (tez qarish sindromi)</div>
+                            <div class="section"><strong>Yechimi:</strong> Simptomatik davo, gen terapiyasi istiqbollari</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END032</div>
+                            <div class="title">Gormon faolligi past karzinoma</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Endokrin bez o‘smalari (masalan, tiroid noduli)</div>
+                            <div class="section"><strong>Yechimi:</strong> Jarrohlik, biopsiya, onkologik nazorat</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END033</div>
+                            <div class="title">Estrogen dominanti (ayollarda)</div>
+                            <div class="section"><strong>Kelib chiqishi:</strong> Progesteron darajasining pasayishi, stress</div>
+                            <div class="section"><strong>Yechimi:</strong> Gormonterapiya, parhez, jigar faoliyatini qo‘llash</div>
+                          </div>
+                          
+                          <div class="med-card">
+                            <div class="code">END034</div>
+                            <div class="title">Kronik buyrak usti charchoq sindromi</div>
+                            
+                            <div class="med-card">
+                                <div class="code">DRG026</div>
+                                <div class="title">Metformin</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> 2-tip diabetda glyukozani pasaytirish</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> Qandli diabet, insulin qarshiligida</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG027</div>
+                                <div class="title">Levotiroksin</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> Qalqonsimon bez gormon yetishmovchiligi (gipotiroidizm)</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> Gipotiroidizm, Hashimoto tireoiditi</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG028</div>
+                                <div class="title">Insulin</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> Tana o‘zida insulin ishlab chiqara olmasa</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> 1-tip diabet, ketoatsidoz</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG029</div>
+                                <div class="title">Glukokortikoidlar (Prednizolon)</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> Yallig‘lanish, autoimmun kasalliklar</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> Astma, revmatoid artrit, allergiya</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG030</div>
+                                <div class="title">Ibandronat</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> Suv mineralizatsiyasi pasayishi (osteoporoz)</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> Osteoporoz, suyak sinishining oldini olish</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG031</div>
+                                <div class="title">Cabergoline</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> Prolaktin gormoni darajasining ortishi</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> Giperprolaktinemiya, galaktoreya</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG032</div>
+                                <div class="title">Somatropin</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> O‘sish gormoni tanqisligi</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> Gigantizm, bolalarda o‘sishning sustligi</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG033</div>
+                                <div class="title">Estradiol</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> Estrogen darajasi past bo‘lishi</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> Menopauza, gormon almashtiruvchi terapiya</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG034</div>
+                                <div class="title">Bromocriptine</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> Prolaktin ortiqchasi</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> Giperprolaktinemiya, Parkinson kasalligi</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG035</div>
+                                <div class="title">Hydrocortisone</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> Buyrak usti bezining yetishmovchiligi (Addison)</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> Addison, allergik shok, surunkali yallig‘lanish</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG036</div>
+                                <div class="title">Desmopressin</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> Antidiuretik gormon (ADH) tanqisligi</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> Diyabet insipidus, tungi siyish</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG037</div>
+                                <div class="title">Canagliflozin</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> Qandli diabetda glyukozaning siydik orqali chiqarilishini rag‘batlantirish</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> 2-tip diabet</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG038</div>
+                                <div class="title">Propylthiouracil (PTU)</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> Qalqonsimon bez gormonlarining ortiqchasi (gipertiroidizm)</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> Grev-Graves kasalligi, tirotoz</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG039</div>
+                                <div class="title">Sitagliptin</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> Inkretin gormonlarining faolligini oshirish orqali glyukoza nazorati</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> 2-tip diabetda glyukozani me’yorga keltirish</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG040</div>
+                                <div class="title">Liraglutide</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> Inkretin sistemasi orqali insulinga sezgirlikni oshirish</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> 2-tip diabet, semizlik</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG041</div>
+                                <div class="title">Finasteride</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> 5-alfa-reduktaza fermenti ortiqchaligi</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> Prostatani kattalashishi, erkaklardagi soch to‘kilish</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG042</div>
+                                <div class="title">Spironolactone</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> Aldosteron gormoni tanqisligi yoki ortiqligi</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> Gipertenziya, PCOS, suvsizlanish</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG043</div>
+                                <div class="title">Raloxifene</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> Estrogen retseptor muvozanatsizligi</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> Osteoporoz, menopauzadan keyingi himoya</div>
+                              </div>
+                              
+                              <div class="med-card">
+                                <div class="code">DRG044</div>
+                                <div class="title">Octreotide</div>
+                                <div class="section"><strong>Chiqish sababi:</strong> O‘sish gormoni (GH) ortiqligi</div>
+                                <div class="section"><strong>Qo‘llaniladi:</strong> Akromegaliya, neyroendokrin o‘smalar</div>
+                              </div>
+                     <script>
+                              function searchCards() {
+                                let input = document.getElementById("searchInput").value.toLowerCase();
+                                let cards = document.getElementsByClassName("med-card");
+                              
+                                for (let i = 0; i < cards.length; i++) {
+                                  let cardText = cards[i].innerText.toLowerCase();
+                                  cards[i].style.display = cardText.includes(input) ? "block" : "none";
+                                }
+                              }
+                            </script>
